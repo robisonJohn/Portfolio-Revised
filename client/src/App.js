@@ -7,6 +7,7 @@ function App() {
     <div className="App">
       <h1>hello there</h1>
       <h1>can I post two things?</h1>
+      <Home />
     </div>
   );
 }
