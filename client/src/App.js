@@ -4,7 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // External Components
 import './App.css';
 
-import Home from './screens/Home/Home'
+// import Home from './screens/Home/Home'
+import Books from './screens/Books/Books'
 /*
 import WritingSamples from './screens/WritingSamples/WritingSamples';
 import Projects from './screens/Projects/Projects';
@@ -18,7 +19,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Home />
+      <Books />
     </div>
   );
 }
