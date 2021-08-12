@@ -7,7 +7,7 @@ const getToken = () => {
 };
 
 const api = axios.create({
-    baseURL: 'http://localhost:3000/books',
+    baseURL: 'http://localhost:3000/',
 });
 
 api.interceptors.request.request(
