@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 
 const Header = () => {
@@ -7,10 +7,10 @@ const Header = () => {
         <Container>
         <Navbar.Brand href="#home">John Robison's Portfolio</Navbar.Brand>
         <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#projects">Engineering Projects</Nav.Link>
-            <Nav.Link href="#samples">Writing Samples</Nav.Link>
-            <Nav.Link href="books">Favorite Books</Nav.Link>
+            <Link to="/home"><Nav.Link href="#home">Home</Nav.Link></Link>
+            <Link to="/projects"><Nav.Link href="#projects">Engineering Projects</Nav.Link></Link>
+            <Link to="/writing"><Nav.Link href="#samples">Writing Samples</Nav.Link></Link>
+            <Link to="/books"><Nav.Link href="books">Favorite Books</Nav.Link></Link>
         </Nav>
         </Container>
     </Navbar>
