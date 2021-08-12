@@ -3,7 +3,7 @@
         left: 0;
         width: 100%;
         height: 4em;
-        background-color: #fafaf2;
+        background-color: #4B736E;
         display: flex;
         justify-content: space-between;
     }
@@ -13,11 +13,11 @@
         padding-left: 1.15em;
         font-weight: 400;
         font-size: small;
-        color: #546747;
+        color: #FAFAFA;
     }
     
     #copy-right a {
-        color: #546747;
+        color: #FAFAFA;
         font-weight: 600;
         text-decoration: none;
     }
@@ -45,11 +45,11 @@
         padding-left: 1.15em;
         font-weight: 400;
         font-size: small;
-        color: #546747;
+        color: #FAFAFA;
         }
     
         #copy-right a {
-        color: #546747;
+        color: #4B736E;
         font-weight: 600;
         text-decoration: none;
         }

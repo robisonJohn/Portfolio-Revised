@@ -10,7 +10,7 @@ function Footer() {
             target="_blank"
             rel="noreferrer"
                 >
-                    See My Other Work
+                    See More Work by John Robison
                 </a>{" "}
             </div>
             <div id="github-logo">
