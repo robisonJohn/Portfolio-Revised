@@ -53,7 +53,9 @@ Book.destroy_all
     img_url: "https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Zero_to_One.jpg/220px-Zero_to_One.jpg", 
     publication_date: "2014",
     author: @thiel,
-    category: @business
+    category: @business,
+    author_name: "Peter Thiel",
+    category_name: "Business"
 )
 @sirens_of_titan = Book.create(
     title: "The Sirens of Titan", 
@@ -67,7 +69,9 @@ Book.destroy_all
     img_url: "https://upload.wikimedia.org/wikipedia/en/5/57/TheSirensofTitan%281959%29.jpg", 
     publication_date: "1959",
     author: @vonnegut,
-    category: @science_fiction
+    category: @science_fiction,
+    author_name: "Kurt Vonnegut",
+    category_name: "Science Fiction"
 )
 @dune = Book.create(
     title: "Dune", 
@@ -78,7 +82,9 @@ Book.destroy_all
     img_url: "https://images.penguinrandomhouse.com/cover/9780593099322", 
     publication_date: "1965",
     author: @herbet,
-    category: @science_fiction
+    category: @science_fiction,
+    author_name: "Frank Herbert",
+    category_name: "Science Fiction"
 )
 
 @martian_chronicles = Book.create(
@@ -88,7 +94,9 @@ Book.destroy_all
     img_url: "https://images-na.ssl-images-amazon.com/images/I/518WxaFw0rL.jpg",
     publication_date: " ",
     author: @bradbury,
-    category: @science_fiction
+    category: @science_fiction,
+    author_name: "Ray Bradbury",
+    category_name: "Science Fiction"
 )
 @foundation = Book.create(
     title: "Foundation", 
@@ -97,7 +105,10 @@ Book.destroy_all
     img_url: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1417900846l/29579.jpg", 
     publication_date: " ",
     author: @asimov,
-    category: @science_fiction
+    category: @science_fiction,
+    author_name: "Isaac Asimov",
+    category_name: "Science Fiction"
+
 )
 @snow_crash = Book.create(
     title: "Snow Crash", 
@@ -106,7 +117,9 @@ Book.destroy_all
     img_url: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327937330l/6303927.jpg", 
     publication_date: " ",
     author: @stephenson,
-    category: @science_fiction
+    category: @science_fiction,
+    author_name: "Neal Stephenson",
+    category_name: "Science Fiction"
 )
 
 @life_after_google = Book.create(
@@ -116,7 +129,9 @@ Book.destroy_all
     img_url: "https://images-na.ssl-images-amazon.com/images/I/611dc2sHZoL.jpg", 
     publication_date: "",
     author: @gilder,
-    category: @computer_science
+    category: @computer_science,
+    author_name: "George Gilder",
+    category_name: "Computer Science"
 )
 @sapiens = Book.create(
     title: "Sapiens", 
@@ -125,7 +140,9 @@ Book.destroy_all
     img_url: "https://images-na.ssl-images-amazon.com/images/I/41+lolL22gL._SX314_BO1,204,203,200_.jpg", 
     publication_date: " ",
     author: @harari,
-    category: @social_sciences
+    category: @social_sciences,
+    author_name: "Yuval Noah Harari",
+    category_name: "Social Sciences"
 )
 @dark = Book.create(
     title: "Dark", 
@@ -134,7 +151,9 @@ Book.destroy_all
     img_url: "https://images-na.ssl-images-amazon.com/images/I/81oWDX24u%2BL._SL1200_.jpg", 
     publication_date: " ",
     author: @odar_and_friese,
-    category: @alt_media
+    category: @alt_media,
+    author_name: "Baran bo Odar and Jantje Friese",
+    category_name: "Other Media Forms"
 )
 
 @surely_joking = Book.create(
@@ -144,7 +163,9 @@ Book.destroy_all
     img_url: "https://pbs.twimg.com/media/EQvypQXUUAATrhT.jpg", 
     publication_date: " ",
     author: @feynman,
-    category: @math_and_physics
+    category: @math_and_physics,
+    author_name: "Richard Feynman",
+    category_name: "Mathematics and Physics"
 )
 
-
+puts "#{Book.count} books created!"
