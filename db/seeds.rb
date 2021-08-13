@@ -32,7 +32,7 @@ Book.destroy_all
 # Neal Stephenson
 @stephenson = Author.create(name: 'Neal Stephenson', country_of_origin: 'United States', category_id: @science_fiction.id)
 # Jordan Ellenberg
-@ellenberg = Author.create(name: 'Jordan Ellenberg', country_of_origin: 'United States', category_id: @math_and_physics.id)
+# @ellenberg = Author.create(name: 'Jordan Ellenberg', country_of_origin: 'United States', category_id: @math_and_physics.id)
 # George Gilder
 @gilder = Author.create(name: 'George Gilder', country_of_origin: 'United States', category_id: @computer_science.id)
 # Yuval Noah Harari
@@ -106,15 +106,7 @@ Book.destroy_all
     author: @stephenson,
     category: @science_fiction
 )
-@how_to_not_be_wrong = Book.create(
-    title: "How to Not be Wrong", 
-    description: " ", 
-    review: " ", 
-    img_url: " ", 
-    publication_date: "https://images-na.ssl-images-amazon.com/images/I/71tUzRQNtfL.jpg",
-    author: @ellenberg,
-    category: @math_and_physics
-)
+
 @life_after_google = Book.create(
     title: "Life After Google", 
     description: "", 
@@ -133,11 +125,11 @@ Book.destroy_all
     author: @harari,
     category: @social_sciences
 )
-@dark_season_one = Book.create(
-    title: "Dark (Season One)", 
+@dark = Book.create(
+    title: "Dark", 
     description: " ", 
     review: " ", 
-    img_url: "https://res.cloudinary.com/jerrick/image/upload/f_jpg,fl_progressive,q_auto,w_1024/xtcyo6jblfnqv2dlkfnr.jpg", 
+    img_url: "https://images-na.ssl-images-amazon.com/images/I/81oWDX24u%2BL._SL1200_.jpg", 
     publication_date: " ",
     author: @odar_and_friese,
     category: @alt_media
