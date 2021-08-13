@@ -2,3 +2,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
+h5 {
+    max-width: 400px;
+    margin: 15px;
+    margin-top:60px;
+}
+

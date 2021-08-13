@@ -52,9 +52,9 @@ const Home = () => {
                 </Card>
 
                 <Card style={{backgroundColor:'#4B736E', margin: "15px", padding: "15px"}}>
-                    If you’re interested in learning more about me, please feel free to browse this portfolio website. I have included my 
+                    If you’re interested in learning more about me, this website includes 
                     recent projects,  writing samples, and favorite books for your perusal. I hope this website provides meaningful feedback 
-                    into my temperament and character. Finally, I hope you find this virtual interaction with me both meaningful and impactful.
+                    into my temperament and character.
                 </Card>
 
                 <p>

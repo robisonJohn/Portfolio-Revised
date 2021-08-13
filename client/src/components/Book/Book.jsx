@@ -1,4 +1,4 @@
-import { Image } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 import './Book.css';
@@ -6,11 +6,11 @@ import './Book.css';
 const Book = (props) => {
     return (
         <Link className="book" to={`/books/${props.id}`}>
-            <div>
+            <Card style={{ height: "430px", width: "300px", margin: "40px", padding: "10px"}}>
                 <div className="book-image-container">
-                    <Image src={props.img_url} alt={props.name} className="book-image" height="400" width="300"/>
+                    <Card.Img src={props.img_url} alt={props.name} className="book-image" height="400" width="300"/>
                 </div>
-            </div>        
+            </Card>        
         </Link>
 
     )
