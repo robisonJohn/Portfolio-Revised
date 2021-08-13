@@ -31,8 +31,8 @@ const Home = () => {
                     Institute where I am writing an analysis of the DeFi space for C-Suite executives.
                     Prior to the BRI, I worked at NASA Goddard Space and Flight Center in their 
                     Cryospheric Sciences division as a researcher where I was focusing on using methods 
-                    in statistical machine learning methods to identify error between satellite data measurements 
-                    and citizen scientist data measurements.
+                    in statistical machine learning to identify error between satellite data measurements
+                    (gathered by a laser altimeter) and citizen scientist data observations (gathered by a camera-reliant smart phone application).
                 </p>
                 <p>
                     My original goal in life was to pursue a PhD in either mathematics or statistics. However, after working at NASA for
@@ -54,8 +54,7 @@ const Home = () => {
 
                 <p>
                     If you’re interested in my work and project experience, please see my resume and GitHub. If you are interested in 
-                    connecting with me further, please connect with me on LinkedIn. If you wish to contact me directly, feel free to email 
-                    me directly.
+                    connecting with me further, please connect with me on LinkedIn.
                 </p>
 
                 <p>
