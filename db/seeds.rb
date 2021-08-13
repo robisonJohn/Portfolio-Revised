@@ -5,6 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+=begin
+Category.destroy_all
+Author.destroy_all
+Book.destroy_all
+=end
 
 @science_fiction = Category.create(name: 'Science Fiction')
 @computer_science = Category.create(name: 'Computer Science')
@@ -68,74 +73,75 @@
     review: "A book that combines messianic myths, ecology, futuristic technology, and epic battles; one of my all-time favorite
     books, Dune has fueled my interest in building cities that fuse ecological principles with modern infrastructure so that 
     Earth does not befall the same fate as the Fremen's homeworld.", 
-    img_url: "https://upload.wikimedia.org/wikipedia/en/thumb/d/de/Dune-Frank_Herbert_%281965%29_First_edition.jpg/220px-Dune-Frank_Herbert_%281965%29_First_edition.jpg", 
+    img_url: "https://images.penguinrandomhouse.com/cover/9780593099322", 
     publication_date: "1965",
     author: @herbet,
     category: @science_fiction
 )
-=begin
+
 @martian_chronicles = Book.create(
     title: "The Martian Chronicles", 
-    description: "", 
-    review: "", 
-    img_url: "", 
-    publication_date: "",
-    author_id: ,
-    category_id: 
+    description: " ", 
+    review: " ", 
+    img_url: "https://images-na.ssl-images-amazon.com/images/I/518WxaFw0rL.jpg",
+    publication_date: " ",
+    author: @bradbury,
+    category: @science_fiction
 )
 @foundation = Book.create(
     title: "Foundation", 
-    description: "", 
-    review: "", 
-    img_url: "", 
-    publication_date: "",
-    author_id: ,
-    category_id: 
+    description: " ", 
+    review: " ", 
+    img_url: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1417900846l/29579.jpg", 
+    publication_date: " ",
+    author: @asimov,
+    category: @science_fiction
 )
 @snow_crash = Book.create(
     title: "Snow Crash", 
-    description: "", 
-    review: "", 
-    img_url: "", 
-    publication_date: "",
-    author_id: ,
-    category_id: 
+    description: " ", 
+    review: " ", 
+    img_url: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327937330l/6303927.jpg", 
+    publication_date: " ",
+    author: @stephenson,
+    category: @science_fiction
 )
 @how_to_not_be_wrong = Book.create(
     title: "How to Not be Wrong", 
-    description: "", 
-    review: "", 
-    img_url: "", 
-    publication_date: "",
-    author_id: ,
-    category_id: 
+    description: " ", 
+    review: " ", 
+    img_url: " ", 
+    publication_date: "https://images-na.ssl-images-amazon.com/images/I/71tUzRQNtfL.jpg",
+    author: @ellenberg,
+    category: @math_and_physics
 )
 @life_after_google = Book.create(
     title: "Life After Google", 
     description: "", 
     review: "", 
-    img_url: "", 
+    img_url: "https://images-na.ssl-images-amazon.com/images/I/611dc2sHZoL.jpg", 
     publication_date: "",
-    author_id: ,
-    category_id: 
+    author: @gilder,
+    category: @computer_science
 )
 @sapiens = Book.create(
     title: "Sapiens", 
-    description: "", 
-    review: "", 
-    img_url: "", 
-    publication_date: "",
-    author_id: ,
-    category_id: 
+    description: " ", 
+    review: " ", 
+    img_url: "https://images-na.ssl-images-amazon.com/images/I/41+lolL22gL._SX314_BO1,204,203,200_.jpg", 
+    publication_date: " ",
+    author: @harari,
+    category: @social_sciences
 )
 @dark_season_one = Book.create(
     title: "Dark (Season One)", 
-    description: "", 
-    review: "", 
-    img_url: "", 
-    publication_date: "",
-    author_id: ,
-    category_id: 
+    description: " ", 
+    review: " ", 
+    img_url: "https://res.cloudinary.com/jerrick/image/upload/f_jpg,fl_progressive,q_auto,w_1024/xtcyo6jblfnqv2dlkfnr.jpg", 
+    publication_date: " ",
+    author: @odar_and_friese,
+    category: @alt_media
 )
-=end
+
+
 
