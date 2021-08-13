@@ -21,7 +21,7 @@ const Books = () => {
     return (
         <div>
             <h1>My favorite books</h1>
-            <div>
+            <div id="books-grid">
                 {books.map((book, index) => {
                     return (
                         <Book 

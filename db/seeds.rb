@@ -40,6 +40,8 @@ Book.destroy_all
 # Baran bo Odar and Jantje Friese
 @odar_and_friese = Author.create(name: 'Baran bo Odar and Jantje Friese', country_of_origin: 'Germany', category_id: @alt_media.id)
 
+@feynman = Author.create(name: 'Richard Feynman', country_of_origin: 'United States', category_id: @math_and_physics.id)
+
 @zero_to_one = Book.create(
     title: "Zero to One", 
     description: "A book written by Blake Masters, a former student of Thiel at Stanford, on Thiel's comments regarding the
@@ -135,5 +137,14 @@ Book.destroy_all
     category: @alt_media
 )
 
+@surely_joking = Book.create(
+    title: "Surely you're joking, Mr. Feynman", 
+    description: " ", 
+    review: " ", 
+    img_url: "https://pbs.twimg.com/media/EQvypQXUUAATrhT.jpg", 
+    publication_date: " ",
+    author: @feynman,
+    category: @math_and_physics
+)
 
 

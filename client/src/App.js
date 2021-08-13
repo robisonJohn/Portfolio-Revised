@@ -10,7 +10,8 @@ import Books from './screens/Books/Books'
 import WritingSamples from './screens/WritingSamples/WritingSamples';
 import Projects from './screens/Projects/Projects';
 import Header from './components/Header/Header';
-// import Footer from './components/Footer/Footer';
+import BookDetail from './screens/BookDetail/BookDetail'
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -27,9 +28,13 @@ function App() {
       <Route path="/writing">
         <WritingSamples />
       </Route>
-      <Route path="/books">
+      <Route exact path="/books">
         <Books />
       </Route>
+      <Route exact path="/books/:id">
+        <BookDetail />
+      </Route>
+      <Footer />
 
     </div>
   );
