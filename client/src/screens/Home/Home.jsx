@@ -6,12 +6,12 @@ const Home = () => {
             <Container>
                 <Row>
                         <Col>
-                            <Image src="https://gocolumbialions.com/images/2017/9/21/BFVHOAVAUFXMKGK.20170921192451.JPG" width="225" height="250" alt=""/>
+                            <Card style={{width: '15rem', marginTop: '20px', marginLeft: '200px'}}><Card.Img src="https://gocolumbialions.com/images/2017/9/21/BFVHOAVAUFXMKGK.20170921192451.JPG" width="225" height="250" alt=""/></Card>
                         </Col>
                     
                 <Col>
                     <Row>
-                        <Col><Card id="resume-card" width="100"><a href="https://previews.123rf.com/images/hironicons/hironicons1912/hironicons191201172/136455877-cv-resume-icon.jpg"><Image src="https://static.thenounproject.com/png/543772-200.png" height="90" width="100" alt=""/></a></Card></Col>
+                        <Col><Card style={{ width: '7rem', marginLeft: '205px', marginBottom: '15px', marginTop: '15px'}}><a href="https://previews.123rf.com/images/hironicons/hironicons1912/hironicons191201172/136455877-cv-resume-icon.jpg"><Card.Img src="https://static.thenounproject.com/png/543772-200.png" height="90" width="100" alt=""/></a></Card></Col>
                     </Row>
                     <Row>
                         <Col><a href="https://www.linkedin.com/in/john-robison-a3b649217/"><Image src="https://cdn3.iconfinder.com/data/icons/sociocons/256/linkedin-sociocon.png" height="100" width="100" alt=""/></a></Col>
