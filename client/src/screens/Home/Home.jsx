@@ -1,13 +1,9 @@
+import { Container } from 'react-bootstrap';
 
 const Home = () => {
     return (
-        <div id="primary-container">
+        <Container id="primary-container">
             <h1>Images go here</h1>
-            <img src="./images/headshot.jpg" alt="headshot"/>
-            <img src="./images/github.png" alt="github"/>
-            <img src="./images/gmail.png" alt="gmail"/>
-            <img src="./images/resume-2.png" alt="resume"/>
-            <img src="./images/linkedin.png" alt="resume"/>
 
             <div id="text-container">
                 <h1>Welcome!</h1>
@@ -27,7 +23,7 @@ const Home = () => {
                     and I don’t want to relegate myself to the lifestyle of an academic when I could instead play a role in solving these 
                     problems. Therefore, I enrolled in a Software Engineering Bootcamp at General Assembly this past summer (in addition to 
                     my work at the BRI) and have sought to convert my skills in mathematics, statistics, and data science into understanding 
-                    how to buiild ideas into solutions for concrete human problems.
+                    how to build ideas into solutions for concrete human problems.
                 </p>
 
                 <p>
@@ -59,7 +55,7 @@ const Home = () => {
                 </p>
 
             </div>
-        </div>
+        </Container>
 
 
     )
