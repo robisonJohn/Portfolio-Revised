@@ -25,7 +25,7 @@ const Projects = () => {
                     <Card style={{backgroundColor:'#4B736E', margin: "15px", padding: "15px", width: "700px"}}>
                         <h3>Drone Wars</h3>
                         
-                        <h4><a href="https://github.com/robisonJohn/Portfolio-Revised/blob/main/2125625.pdf"><Card.Img src={droneWars} height="650" width="100px" style={{margin: "20px", padding: "60px"}}/></a></h4>
+                        <h4><a href="https://github.com/robisonJohn/Portfolio-Revised/blob/main/2125625.pdf"><Card.Img src={droneWars} height="650" width="100px" style={{margin: "20px", padding: "60px", marginTop: "-40px", marginBottom: "-10px"}}/></a></h4>
                         <p style={{marginTop: "-40px"}}>
                             Drone Wars is a project I completed as part of a 3-person team for Columbia University's mathematics club over 72 hours
                             as part of a competition in the International Mathematical Contest in Modeling. We received honorable mention in this category,

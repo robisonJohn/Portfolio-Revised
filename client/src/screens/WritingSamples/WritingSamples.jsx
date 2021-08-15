@@ -1,4 +1,7 @@
 import { Container, Card, Row, Col } from 'react-bootstrap';
+import origin from './images/origin-of-evil.png';
+import primes from './images/primes-and-pop-art.png';
+import dragons from './images/rational-dragons.png';
 
 const WritingSamples = () => {
     return (
@@ -7,8 +10,8 @@ const WritingSamples = () => {
             <Col className="justify-content-md-center">
                 <Row className="justify-content-md-center">
                     <Card style={{backgroundColor:'#4B736E', margin: "15px", padding: "15px", width: "700px"}}>
-                        <h2>Rational Dragons</h2>
-                        <p>See paper <a href="https://github.com/robisonJohn/Portfolio-Revised/blob/main/MCM_Final_Assignment.pdf">here</a></p>
+                        <h3>Rational Dragons</h3>
+                        <a href="https://github.com/robisonJohn/Portfolio-Revised/blob/main/MCM_Final_Assignment.pdf"><Card.Img src={dragons} height="700" width="100px" style={{margin: "20px", padding: "60px", marginTop: "-40px", marginBottom: "-40px"}}/></a>
                         <p>
                             What if dragons from Game of Thrones existed on Earth? This paper seeks to examine this question under an initial assumption that dragons 
                             are in fact rational agents that seek to optimize their individual utility by avoiding other dragons and instead maximizing 
@@ -18,8 +21,8 @@ const WritingSamples = () => {
                 </Row>
                 <Row className="justify-content-md-center">
                     <Card style={{backgroundColor:'#4B736E', margin: "15px", padding: "15px", width: "700px"}}>
-                        <h2>Prime Numbers and Post-Modern Art</h2>
-                        <p>See paper <a href="https://github.com/robisonJohn/Portfolio-Revised/blob/main/Prime%20Numbers%20and%20Post-Modern%20Art.pdf">here</a></p>
+                        <h3>Prime Numbers and Post-Modern Art</h3>
+                        <a href="https://github.com/robisonJohn/Portfolio-Revised/blob/main/Prime%20Numbers%20and%20Post-Modern%20Art.pdf"><Card.Img src={primes} height="700" width="100px" style={{margin: "20px", padding: "60px", marginTop: "-40px", marginBottom: "-40px"}}/></a>
                         <p>
                             This paper offers an exploration into a work of art by German painter Rune Mields that models the Sieve of Erastothenes and 
                             debates whether it should be included into 
@@ -34,8 +37,8 @@ const WritingSamples = () => {
                 </Row>
                 <Row className="justify-content-md-center">
                     <Card style={{backgroundColor:'#4B736E', margin: "15px", padding: "15px", width: "700px", marginBottom: "100px"}}>
-                        <h2>The Fall of Man: A Critical Analysis into the Origins of Evil</h2>
-                        <p>See paper <a href="https://github.com/robisonJohn/Portfolio-Revised/blob/main/The%20Fall%20of%20Man-2.pdf">here</a></p>
+                        <h3>The Fall of Man: A Critical Analysis into the Origins of Evil</h3>
+                        <a href="https://github.com/robisonJohn/Portfolio-Revised/blob/main/The%20Fall%20of%20Man-2.pdf"><Card.Img src={origin} height="700" width="100px" style={{margin: "20px", padding: "60px", marginTop: "-40px", marginBottom: "-40px"}}/></a>
                         <p>
                             What is the origin of evil? Are humans born evil (nature) or does evil derive from external sources (nurture)? In this essay,
                             I examine three distinct works in cinema (Peppermint Candy, Star Wars, and Dark) that delve deeply into the origin story of 
