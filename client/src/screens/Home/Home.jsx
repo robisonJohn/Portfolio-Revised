@@ -1,20 +1,22 @@
 import { Container, Row, Col, Image, Card } from 'react-bootstrap';
 
+//  
 const Home = () => {
     return (
-        <Container id="primary-container">
-            <Container id="photo-container">
+        <Container className="justify-content-md-center">
+            <Container className="justify-content-md-center">
                 <Col>
-                    <Row id="main-column">
-                        <Card style={{width: '13rem', marginTop: '20px'}}><Card.Img src="https://gocolumbialions.com/images/2017/9/21/BFVHOAVAUFXMKGK.20170921192451.JPG" width="225" height="250" alt=""/></Card>
+                    <Row className="justify-content-md-center">
+                        <Card style={{width:"210px", height:"265px", marginTop: '20px', padding: "5px"}}><Card.Img src="https://gocolumbialions.com/images/2017/9/21/BFVHOAVAUFXMKGK.20170921192451.JPG" width="200" height="250" alt=""/></Card>
                     </Row>
-                    <Row>
-                            <Col>
-                                <Card style={{ height: "88px", width: "95px", marginLeft: '25px', marginTop: '85px'}}><a href="https://previews.123rf.com/images/hironicons/hironicons1912/hironicons191201172/136455877-cv-resume-icon.jpg"><Card.Img src="https://static.thenounproject.com/png/543772-200.png" height="90" width="120" alt=""/></a></Card>
+                    <Row className="justify-content-md-center">
+                            <Col></Col>
+                            <Col className="justify-content-md-center">
+                                <Card style={{ height: "88px", width: "95px", marginLeft: '25px', marginTop: '90px'}}><a href="https://previews.123rf.com/images/hironicons/hironicons1912/hironicons191201172/136455877-cv-resume-icon.jpg"><Card.Img src="https://static.thenounproject.com/png/543772-200.png" height="90" width="120" alt=""/></a></Card>
                             </Col>
-                            <Col><a href="https://www.linkedin.com/in/john-robison-a3b649217/"><Image src="https://cdn3.iconfinder.com/data/icons/sociocons/256/linkedin-sociocon.png" height="100" width="100" alt="" style={{ marginTop: '80px'}}/></a></Col>
-                            <Col><a href="https://github.com/robisonJohn"><Image src="https://d1158lcjk2f3km.cloudfront.net/assets.00/asstziwq0a1i" height="100" width="100" alt="" style={{ marginTop: '75px'}}/></a></Col>
-                        
+                            <Col className="justify-content-md-center"><a href="https://www.linkedin.com/in/john-robison-a3b649217/"><Image src="https://cdn3.iconfinder.com/data/icons/sociocons/256/linkedin-sociocon.png" height="100" width="100" alt="" style={{ marginTop: '80px'}}/></a></Col>
+                            <Col className="justify-content-md-center"><a href="https://github.com/robisonJohn"><Image src="https://d1158lcjk2f3km.cloudfront.net/assets.00/asstziwq0a1i" height="100" width="100" alt="" style={{ marginTop: '75px'}}/></a></Col>
+                            <Col></Col>
                     </Row>
                 </Col>
 
@@ -23,7 +25,7 @@ const Home = () => {
             <Container>
                 <h1>Welcome!</h1>
                 <Col>
-                    <Row>
+                    <Row className="justify-content-md-center">
                         <Card style={{backgroundColor:'#4B736E', margin: "15px", padding: "15px", width: "700px"}}>
                             My name is John Robison, a second semester student-athlete at Columbia University 
                             studying mathematics and statistics. I currently work for the Blockchain Research 
@@ -34,7 +36,7 @@ const Home = () => {
                             (gathered by a laser altimeter) and citizen scientist data observations (gathered by a camera-reliant smart phone application).
                         </Card>
                     </Row>
-                    <Row>
+                    <Row className="justify-content-md-center">
                         <Card style={{backgroundColor:'#4B736E', margin: "15px", padding: "15px", width: "700px"}}>
                             My original goal in life was to pursue a PhD in either mathematics or statistics. However, after working at NASA for
                             the summer, I realized that although such work is interesting and rigorous, it lacks a degree of transcendental meaning 
@@ -45,7 +47,7 @@ const Home = () => {
                             more broadly how to build ideas into solutions for concrete human problems.
                         </Card>
                     </Row>
-                    <Row>
+                    <Row className="justify-content-md-center">
                         <Card style={{backgroundColor:'#4B736E', margin: "15px", padding: "15px", width: "700px"}}>
                             However, it is not enough to simply have the answers to current problems; it is equally (if not more) important to also 
                             know how to ask the right questions and to possess the will to act on these intuitions. It is for these reasons that I am 
@@ -54,7 +56,7 @@ const Home = () => {
                             the world based on this moral philosophy may be implemented.
                         </Card>
                     </Row>
-                    <Row>
+                    <Row className="justify-content-md-center">
                         <Card style={{backgroundColor:'#4B736E', margin: "15px", padding: "15px", width: "700px"}}>
                             If you’re interested in my work and project experience, please see my resume and GitHub. If you are interested in 
                             connecting with me further, please feel free to send me an invitation to connect on LinkedIn.
@@ -63,7 +65,7 @@ const Home = () => {
                             into my temperament and character.
                         </Card>
                     </Row>
-                    <Row>
+                    <Row className="justify-content-md-center">
                                                 
                         <p>
                             <em>Happy Browsing,</em>
