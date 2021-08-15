@@ -16,7 +16,6 @@ const Projects = () => {
     return (
         <Container>
             <h2>Selected Projects</h2>
-            <p>The following projects are </p>
             <Col className="justify-content-md-center">
                 <Row className="justify-content-md-center">
                     <Card style={{backgroundColor:'#4B736E', margin: "15px", padding: "15px", width: "700px"}}>
