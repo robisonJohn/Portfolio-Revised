@@ -1,4 +1,5 @@
 import { Container, Row, Col, Image, Card } from 'react-bootstrap';
+import headshot from './images/headshot.jpg'
 
 //  
 const Home = () => {
@@ -7,7 +8,7 @@ const Home = () => {
             <Container className="justify-content-md-center">
                 <Col>
                     <Row className="justify-content-md-center">
-                        <Card style={{width:"210px", height:"265px", marginTop: '20px', padding: "5px"}}><Card.Img src="https://gocolumbialions.com/images/2017/9/21/BFVHOAVAUFXMKGK.20170921192451.JPG" width="200" height="250" alt=""/></Card>
+                        <Card style={{width:"190px", height:"265px", marginTop: '20px', padding: "5px"}}><Card.Img src={headshot} width="175" height="250" alt=""/></Card>
                     </Row>
                     <Row className="justify-content-md-center">
                             <Col></Col>

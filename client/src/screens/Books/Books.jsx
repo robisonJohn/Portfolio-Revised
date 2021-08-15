@@ -37,7 +37,7 @@ const Books = () => {
                     </Col>
                 </Row>
                 <Row>
-                    <Col><Button style={{backgroundColor: "white", margin: "15px", borderColor: "white", color: "black"}}>CREATE NEW BOOK</Button></Col>
+                    <Col><Button variant="success" style={{margin: "15px"}}>CREATE NEW BOOK</Button></Col>
                     <Col>
                         <DropdownButton title="FILTER BY GENRE" style={{margin: "15px"}} variant="light">
                                 <Dropdown.Item href="#/science-fiction">Science Fiction</Dropdown.Item>
