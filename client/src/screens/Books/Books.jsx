@@ -26,7 +26,7 @@ const Books = () => {
                 <Row>
                     <Col>
                         <em><h5>
-                            Welcome to Robison's Rotunda, where I post my thoughts on some of my favorite books (as well as a few films and 
+                            Welcome to Robison's Rotunda, where I post my favorite books (as well as a few films and 
                             television shows). Enjoy!
                         </h5></em>
                     </Col>
