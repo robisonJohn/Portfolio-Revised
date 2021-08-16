@@ -50,6 +50,21 @@ const ItemEdit = (props) => {
         <div>
             <Container>{book.title}</Container>
             <Form onSubmit={handleSubmit}>
+                <Container>
+                    <Row className="justify-content-md-center">
+                        <Col className="justify-content-md-center">
+                            <Row className="justify-content-md-center"></Row>
+                            <Row className="justify-content-md-center"></Row>
+                            <Row className="justify-content-md-center"></Row>
+                            <Row className="justify-content-md-center"></Row>
+                            <Row className="justify-content-md-center"></Row>
+                        </Col>
+                        <Col className="justify-content-md-center">
+                            <Row className="justify-content-md-center"></Row>
+                            <Row className="justify-content-md-center"></Row>
+                        </Col>
+                    </Row>
+                </Container>
                     <Form.Control 
                     type="text"
                     className="add-input"
