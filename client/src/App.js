@@ -13,6 +13,7 @@ import Header from './components/Header/Header';
 import BookDetail from './screens/BookDetail/BookDetail';
 import AddBook from './screens/AddBook/AddBook';
 import Footer from './components/Footer/Footer';
+import BookEdit from './screens/BookEdit/BookEdit';
 
 
 function App() {
@@ -37,6 +38,9 @@ function App() {
       </Route>
       <Route path="/newBook">
         <AddBook />
+      </Route>
+      <Route exact path="/books/:id/edit">
+        <BookEdit />
       </Route>
       <Footer />
 

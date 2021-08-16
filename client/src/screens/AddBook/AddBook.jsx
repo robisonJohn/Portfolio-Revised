@@ -3,6 +3,7 @@ import { createBook } from '../../services/books';
 import { Redirect } from 'react-router-dom';
 import { Form, Container, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import './AddBook.css';
 
 const AddBook = (props) => {
     const [book, setBook] = useState({
@@ -57,6 +58,8 @@ const AddBook = (props) => {
                     type="text"
                     className="add-input"
                     placeholder="Description"
+                    as="textarea"
+                    rows={3}
                     value={book.description}
                     name="description"
                     autoFocus 
@@ -66,6 +69,8 @@ const AddBook = (props) => {
                     type="text"
                     className="add-input"
                     placeholder="John's Thoughts"
+                    as="textarea"
+                    rows={3}
                     value={book.review}
                     name="review"
                     autoFocus 
@@ -122,9 +127,9 @@ const AddBook = (props) => {
 
                     <Container>
                         <Link to={'/books'}>
-                            <Button>Back to Browse</Button>
+                            <Button variant="success" className="button">Back to Browse</Button>
                         </Link>
-                        <Button type="submit">
+                        <Button type="submit" variant="warning" className="button">
                             Create Book
                         </Button>
                     </Container>
