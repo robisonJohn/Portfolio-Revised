@@ -21,10 +21,10 @@ const AddBook = (props) => {
     const [isCreated, setCreated] = useState(false); 
 
     const handleChange = (event) => {
-        const { title, value } = event.target;
+        const { name, value } = event.target;
         setBook({
             ...book,
-            [title]: value,
+            [name]: value,
         });
     };
 
@@ -46,98 +46,104 @@ const AddBook = (props) => {
                 <Form onSubmit={handleSubmit}>
                     <Container>
                         <Row>
-                        <Col className="justify-content-md-center">
-                            <Row className="justify-content-md-center">
-                            <Form.Control 
-                                type="text"
-                                className="add-input"
-                                placeholder="Title"
-                                value={book.title}
-                                name="title"
-                                required 
-                                autoFocus 
-                                onChange={handleChange}/>
-                            </Row>
-                            <Row className="justify-content-md-center">
-                                <Form.Control 
-                                type="text"
-                                className="add-input"
-                                placeholder="Image Link"
-                                value={book.img_url}
-                                name="image"
-                                required 
-                                autoFocus 
-                                onChange={handleChange}/>
-                            </Row>
-                            <Row className="justify-content-md-center">
+                            <Form.Group>
+                                <Col className="justify-content-md-center">
+                                <Row className="justify-content-md-center">
                                 <Form.Control 
                                     type="text"
                                     className="add-input"
-                                    placeholder="Year Published"
-                                    value={book.publication_date}
-                                    name="publication"
+                                    placeholder="Title"
+                                    value={book.title}
+                                    name="title"
                                     required 
                                     autoFocus 
                                     onChange={handleChange}/>
-                            </Row>
-                            <Row className="justify-content-md-center">
+                                </Row>
+                                <Row className="justify-content-md-center">
+                                    <Form.Control 
+                                    type="text"
+                                    className="add-input"
+                                    placeholder="Image Link"
+                                    value={book.img_url}
+                                    name="image"
+                                    required 
+                                    autoFocus 
+                                    onChange={handleChange}/>
+                                </Row>
+                                <Row className="justify-content-md-center">
+                                    <Form.Control 
+                                        type="text"
+                                        className="add-input"
+                                        placeholder="Year Published"
+                                        value={book.publication_date}
+                                        name="publication"
+                                        required 
+                                        autoFocus 
+                                        onChange={handleChange}/>
+                                </Row>
+                                <Row className="justify-content-md-center">
+                                    <Form.Control 
+                                        type="text"
+                                        className="add-input"
+                                        placeholder="Author Name"
+                                        value={book.author_name}
+                                        name="name"
+                                        required 
+                                        autoFocus 
+                                        onChange={handleChange}/>
+                                </Row>
+                                <Row className="justify-content-md-center">
+                                    <Form.Select 
+                                        aria-label="Default select example"
+                                        className="add-input"
+                                        placeholder="Genre"
+                                        value={book.category_name}
+                                        name="genre"
+                                        required
+                                        autoFocus
+                                        onChange={handleChange}
+                                        >
+                                            <option>Select Genre</option>
+                                            <option value="Science Fiction">Science Fiction</option>
+                                            <option value="Computer Science">Computer Science</option>
+                                            <option value="Mathematics and Physics">Mathematics and Physics</option>
+                                            <option value="Business">Business</option>
+                                            <option value="Social Sciences">Social Sciences</option>
+                                            <option value="Other Media Forms">Other Forms of Media</option>
+                                        </Form.Select>
+                                </Row>
+                            </Col>
+                            </Form.Group>
+                            <Form.Group>
+                                <Col className="justify-content-md-center">
+                                <Row className="justify-content-md-center">
                                 <Form.Control 
                                     type="text"
                                     className="add-input"
-                                    placeholder="Author Name"
-                                    value={book.author_name}
-                                    name="name"
-                                    required 
+                                    placeholder="Description"
+                                    as="textarea"
+                                    rows={3}
+                                    value={book.description}
+                                    name="description"
                                     autoFocus 
                                     onChange={handleChange}/>
-                            </Row>
-                            <Row className="justify-content-md-center">
-                                <Form.Select 
-                                    aria-label="Default select example"
+                                </Row>
+                                <Row className="justify-content-md-center">
+                                    <Form.Control 
+                                    type="text"
                                     className="add-input"
-                                    placeholder="Genre"
-                                    value={book.category_name}
-                                    name="genre"
-                                    required
-                                    autoFocus
-                                    onChange={handleChange}
-                                    >
-                                        <option>Select Genre</option>
-                                        <option value="Science Fiction">Science Fiction</option>
-                                        <option value="Computer Science">Computer Science</option>
-                                        <option value="Mathematics and Physics">Mathematics and Physics</option>
-                                        <option value="Business">Business</option>
-                                        <option value="Social Sciences">Social Sciences</option>
-                                        <option value="Other Media Forms">Other Forms of Media</option>
-                                    </Form.Select>
-                            </Row>
-                        </Col>
-                        <Col className="justify-content-md-center">
-                            <Row className="justify-content-md-center">
-                            <Form.Control 
-                                type="text"
-                                className="add-input"
-                                placeholder="Description"
-                                as="textarea"
-                                rows={3}
-                                value={book.description}
-                                name="description"
-                                autoFocus 
-                                onChange={handleChange}/>
-                            </Row>
-                            <Row className="justify-content-md-center">
-                                <Form.Control 
-                                type="text"
-                                className="add-input"
-                                placeholder="John's Thoughts"
-                                as="textarea"
-                                rows={3}
-                                value={book.review}
-                                name="review"
-                                autoFocus 
-                                onChange={handleChange}/>
-                            </Row>
-                        </Col>
+                                    placeholder="John's Thoughts"
+                                    as="textarea"
+                                    rows={3}
+                                    value={book.review}
+                                    name="review"
+                                    autoFocus 
+                                    onChange={handleChange}/>
+                                </Row>
+                            </Col>
+                            </Form.Group>
+
+
                         </Row>
                         
                     </Container>

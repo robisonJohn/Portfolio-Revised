@@ -29,10 +29,10 @@ const ItemEdit = (props) => {
     }, [id]);
 
     const handleChange = (event) => {
-        const { title, value } = event.target;
+        const { name, value } = event.target;
         setBook({
             ...book,
-            [title]: value,
+            [name]: value,
         });
     };
 
@@ -48,7 +48,7 @@ const ItemEdit = (props) => {
 
     return (
         <div>
-            <Container>{book.title}</Container>
+            <h1>{book.title}</h1>
             <Form onSubmit={handleSubmit}>
                 <Container>
                     <Row className="justify-content-md-center">
@@ -117,41 +117,43 @@ const ItemEdit = (props) => {
                                                 <option value="Other Media Forms">Other Forms of Media</option>
                                 </Form.Select>
                             </Row>
-                        </Col>
-                        <Col className="justify-content-md-center">
-                            <Row className="justify-content-md-center">
-                            <Form.Control 
-                                type="text"
-                                className="add-input"
-                                placeholder="Add or Update Description"
-                                as="textarea"
-                                rows={3}
-                                value={book.description}
-                                name="description"
-                                autoFocus 
-                                onChange={handleChange}/>
-                            </Row>
-                            <Row className="justify-content-md-center">
-                            <Form.Control 
-                                type="text"
-                                className="add-input"
-                                placeholder="Add or Update Review"
-                                as="textarea"
-                                rows={3}
-                                value={book.review}
-                                name="review"
-                                autoFocus 
-                                onChange={handleChange}/>
-                            </Row>
-                        </Col>
+                            </Col>
+                        
+                            <Col>
+                                <Row className="justify-content-md-center">
+                                    <Form.Control 
+                                        type="text"
+                                        className="add-input"
+                                        placeholder="Add or Update Description"
+                                        as="textarea"
+                                        rows={3}
+                                        value={book.description}
+                                        name="description"
+                                        autoFocus 
+                                        onChange={handleChange}/>
+                                </Row>
+                                <Row className="justify-content-md-center">
+                                    <Form.Control 
+                                        type="text"
+                                        className="add-input"
+                                        placeholder="Add or Update Review"
+                                        as="textarea"
+                                        rows={3}
+                                        value={book.review}
+                                        name="review"
+                                        autoFocus 
+                                        onChange={handleChange}/>
+                                </Row>
+                            </Col>
+                        
                     </Row>
                 </Container>
 
                     <Container>
                         <Link to={'/books'}>
-                            <Button>Back to Browse</Button>
+                            <Button variant="info" className="button">Back to Browse</Button>
                         </Link>
-                        <Button type="submit">
+                        <Button type="submit" variant="warning" className="button">
                             Update Book
                         </Button>
                     </Container>
