@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom'
 import { getBook, deleteBook } from '../../services/books'
 import { Button, Container, Row, Col, Card } from 'react-bootstrap';
+import './BookDetail.css';
 
 const BookDetail = (props) => {
     const [book, setBook] = useState(null);
@@ -23,33 +24,40 @@ const BookDetail = (props) => {
 
     return (
         <div>
-            <h2 id="detail-header">{book.title}</h2>
+            <h1>{book.title}</h1>
 
             <Container>
                 <Row>
+                    
                 <Col style={{margin: "20px"}}>
                     <Row><Card style={{margin: "20px"}}><Card.Img src={book.img_url} height="600" width="200" style={{padding: "30px"}}/></Card></Row>
-                    <Row>
-                        <Link to={`/books`}>
-                            <Button variant="success" style={{margin: "10px", width: "150px"}}>Back to Browse</Button>
-                        </Link>
-                    </Row>
-                    <Row>
-                        <Link to={`/books/${book.id}/edit`}>
-                            <Button variant="warning" style={{margin: "10px", width: "150px"}}>Update Book</Button>
-                        </Link>
-                    </Row>
-                    <Row>
-                        <Link to={`/books`}>
-                            <Button onClick={() => deleteBook(book.id)} variant="danger" style={{margin: "10px", width: "150px"}}>Delete Book</Button>
-                        </Link>
-                    </Row>
+
                 </Col>
-                <Col style={{margin: "20px"}}>
-                    <Row><Card style={{backgroundColor:'#4B736E', margin: "15px", padding: "15px"}}>Category: {book.category_name}</Card></Row>
-                    <Row><Card style={{backgroundColor:'#4B736E', margin: "15px", padding: "15px"}}>Author: {book.author_name}</Card></Row>
-                    <Row><Card style={{backgroundColor:'#4B736E', margin: "15px", padding: "15px"}}>Year Published: {book.publication_date}</Card></Row>
+                <Col style={{margin: "20px"}} className="justify-content-md-center">
+                    <Row className="justify-content-md-center"></Row>
+                    <Row className="justify-content-md-center"><Card style={{backgroundColor:'#4B736E', margin: "15px", padding: "15px", width: "400px"}}>Category: {book.category_name}</Card></Row>
+                    <Row className="justify-content-md-center"><Card style={{backgroundColor:'#4B736E', margin: "15px", padding: "15px", width: "400px"}}>Author: {book.author_name}</Card></Row>
+                    <Row className="justify-content-md-center"><Card style={{backgroundColor:'#4B736E', margin: "15px", padding: "15px", width: "400px"}}>Year Published: {book.publication_date}</Card></Row>
+                    <Col className="justify-content-md-center">
+                        <Row className="justify-content-md-center">
+                            <Link to={`/books`}>
+                                <Button variant="info" style={{margin: "10px", width: "150px"}} className="button">Back to Browse</Button>
+                            </Link>
+                        </Row>
+                        <Row className="justify-content-md-center">
+                            <Link to={`/books/${book.id}/edit`}>
+                                <Button variant="warning" style={{margin: "10px", width: "150px"}} className="button">Update Book</Button>
+                            </Link>
+                        </Row>
+                        <Row className="justify-content-md-center">
+                            <Link to={`/books`}>
+                                <Button onClick={() => deleteBook(book.id)} variant="danger" style={{margin: "10px", width: "150px"}} className="button">Delete Book</Button>
+                            </Link>
+                        </Row>
+                    </Col>
+                    <Row className="justify-content-md-center"></Row>
                 </Col>
+                
                 </Row>
 
             </Container>
