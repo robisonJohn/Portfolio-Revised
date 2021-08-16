@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { getBook, updateBook } from "../../services/books";
 import { useParams, Redirect, Link } from "react-router-dom";
-import { Form, Image, Button, Container } from "react-bootstrap";
+import { Form, Image, Button, Container, Row, Col } from "react-bootstrap";
 
 
 const ItemEdit = (props) => {
@@ -64,6 +64,8 @@ const ItemEdit = (props) => {
                     type="text"
                     className="add-input"
                     placeholder="Add or Update Description"
+                    as="textarea"
+                    rows={3}
                     value={book.description}
                     name="description"
                     autoFocus 
@@ -73,6 +75,8 @@ const ItemEdit = (props) => {
                     type="text"
                     className="add-input"
                     placeholder="Add or Update Review"
+                    as="textarea"
+                    rows={3}
                     value={book.review}
                     name="review"
                     autoFocus 
