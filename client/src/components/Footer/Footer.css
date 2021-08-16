@@ -107,3 +107,14 @@
         margin-left: 5rem;
         }
     }
+
+    #freepik a, #freepik {
+        text-decoration: none;
+        color: #FAFAFA !important;
+        margin-top: 1.5em;
+        font-size: small;
+    }
+
+    #freepik {
+        margin-right: 1.5em;
+    }

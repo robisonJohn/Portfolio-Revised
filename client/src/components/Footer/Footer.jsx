@@ -26,7 +26,7 @@ function Footer() {
                 />
             </a>
             </div>
-            <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <div id="freepik">Icons made by <strong><a href="https://www.freepik.com" title="Freepik" id="free-pik">Freepik</a></strong> from <strong><a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></strong></div>
         </div>
     )
 }
