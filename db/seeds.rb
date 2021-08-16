@@ -19,8 +19,27 @@ Book.destroy_all
 @alt_media = Category.create(name: 'Other Media Forms')
 
 # to start, let's work with the following authors
+# business
+
 # Peter Thiel
 @thiel = Author.create(name: 'Peter Thiel', country_of_origin: 'Germany', category_id: @business.id)
+# Ben Horowitz
+@horowitz = Author.create(name: 'Ben Horowitz', country_of_origin: 'United States', category_id: @business.id)
+# Geoffrey Moore
+@moore = Author.create(name: 'Geoffrey Moore', country_of_origin: 'United States', category_id: @business.id)
+# Benjamin Graham
+@graham = Author.create(name: 'Benjamin Graham', country_of_origin: 'United States', category_id: @business.id)
+# Ayn Rand
+@rand = Author.create(name: 'Ayn Rand', country_of_origin: 'Russia', category_id: @business.id)
+# Daniel Kahneman
+@kahneman = Author.create(name: 'Daniel Kahneman', country_of_origin: 'Israel', category_id: @business.id)
+# Ray Dalio
+@dalio = Author.create(name: 'Ray Dalio', country_of_origin: 'United States', category_id: @business.id)
+# Walter Isaacson
+@isaacson = Author.create(name: 'Walter Isaacson', country_of_origin: 'United States', category_id: @business.id)
+# Adam Grant
+@grant = Author.create(name: 'Adam Grant', country_of_origin: 'United States', category_id: @business.id)
+
 # Kurt Vonnegut
 @vonnegut = Author.create(name: 'Kurt Vonnegut', country_of_origin: 'United States', category_id: @science_fiction.id)
 # Frank Herbert
@@ -31,6 +50,11 @@ Book.destroy_all
 @asimov = Author.create(name: 'Isaac Asimov', country_of_origin: 'Russia', category_id: @science_fiction.id)
 # Neal Stephenson
 @stephenson = Author.create(name: 'Neal Stephenson', country_of_origin: 'United States', category_id: @science_fiction.id)
+# Max Brooks
+@brooks = Author.create(name: 'Max Brooks', country_of_origin: 'United States', category_id: @science_fiction.id)
+# John Scalzi
+@scalzi = Author.create(name: 'John Scalzi', country_of_origin: 'United States', category_id: @science_fiction.id)
+
 # Jordan Ellenberg
 # @ellenberg = Author.create(name: 'Jordan Ellenberg', country_of_origin: 'United States', category_id: @math_and_physics.id)
 # George Gilder
@@ -42,8 +66,10 @@ Book.destroy_all
 
 @feynman = Author.create(name: 'Richard Feynman', country_of_origin: 'United States', category_id: @math_and_physics.id)
 
+
+# business
 @zero_to_one = Book.create(
-    title: "Zero to One", 
+    title: "Zero to One: Notes on Startups, Or How to Build the Future", 
     description: "A book written by Blake Masters, a former student of Thiel at Stanford, on Thiel's comments regarding the
     philosophy of building a business.", 
     review: "By far one of the most impactful books I have ever read, Zero to One sparked my passion for technology and 
@@ -57,15 +83,151 @@ Book.destroy_all
     author_name: "Peter Thiel",
     category_name: "Business"
 )
+
+@hard_things = Book.create(
+    title: "The Hard Thing about Hard Things: Building a Business where there are no Easy Answers", 
+    description: "", 
+    review: "", 
+    img_url: "https://images-na.ssl-images-amazon.com/images/I/810u9MkT3SL.jpg", 
+    publication_date: "2014",
+    author: @horowitz,
+    category: @business,
+    author_name: "Ben Horowitz",
+    category_name: "Business"
+)
+
+@chasm = Book.create(
+    title: "Crossing the Chasm", 
+    description: "", 
+    review: "", 
+    img_url: "https://images-na.ssl-images-amazon.com/images/I/41AJKOyiGML._AC_UL600_SR399,600_.jpg", 
+    publication_date: "1991",
+    author: @moore,
+    category: @business,
+    author_name: "Geoffrey Moore",
+    category_name: "Business"
+)
+
+
+@atlas_shrugged = Book.create(
+    title: "Atlas Shrugged", 
+    description: "", 
+    review: "", 
+    img_url: "https://www.idahoednews.org/wp-content/uploads/2013/02/atlas-shrugged-book-cover.jpg", 
+    publication_date: "1957",
+    author: @rand,
+    category: @business,
+    author_name: "Ayn Rand",
+    category_name: "Business"
+)
+
+@fast_and_slow = Book.create(
+    title: "Thinking, Fast and Slow", 
+    description: "", 
+    review: "", 
+    img_url: "https://m.media-amazon.com/images/I/41shZGS-G+L.jpg", 
+    publication_date: "2011",
+    author: @kahneman,
+    category: @business,
+    author_name: "Daniel Kahneman",
+    category_name: "Business"
+)
+
+@security_analysis = Book.create(
+    title: "Security Analysis", 
+    description: "", 
+    review: "", 
+    img_url: "https://images-na.ssl-images-amazon.com/images/I/51hwLfcPJPL._SX324_BO1,204,203,200_.jpg", 
+    publication_date: "1934",
+    author: @graham,
+    category: @business,
+    author_name: "Benjamin Graham and David Dodd",
+    category_name: "Business"
+)
+
+@investor = Book.create(
+    title: "The Intelligent Investor", 
+    description: "", 
+    review: "", 
+    img_url: "https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/the-intelligent-investor-benjamin-graham-investment-classics-edward-g.jpg", 
+    publication_date: "1949",
+    author: @graham,
+    category: @business,
+    author_name: "Benjamin Graham",
+    category_name: "Business"
+)
+
+@innovators = Book.create(
+    title: "The Innovators", 
+    description: "", 
+    review: "", 
+    img_url: "https://d28hgpri8am2if.cloudfront.net/tagged_assets/cvr9781442376229/9781442376229_hr.jpg", 
+    publication_date: "2014",
+    author: @isaacson,
+    category: @business,
+    author_name: "Benjamin Graham",
+    category_name: "Business"
+)
+
+@principles = Book.create(
+    title: "Principles", 
+    description: "", 
+    review: "", 
+    img_url: "https://images-na.ssl-images-amazon.com/images/I/71FDkx5WllL.jpg", 
+    publication_date: "2017",
+    author: @dalio,
+    category: @business,
+    author_name: "Ray Dalio",
+    category_name: "Business"
+)
+
+@originals = Book.create(
+    title: "Originals", 
+    description: "", 
+    review: "", 
+    img_url: "https://m.media-amazon.com/images/I/511qyzBH42L._AC_SY780_.jpg", 
+    publication_date: "2016",
+    author: @grant,
+    category: @business,
+    author_name: "Adam Grant",
+    category_name: "Business"
+)
+
+@fountainhead = Book.create(
+    title: "The Fountainhead", 
+    description: "", 
+    review: "", 
+    img_url: "https://m.media-amazon.com/images/I/51Cy++hpNIL.jpg",
+    publication_date: "1943",
+    author: @rand,
+    category: @business,
+    author_name: "Ayn Rand",
+    category_name: "Business"
+)
+
+@anthem = Book.create(
+    title: "Anthem", 
+    description: "", 
+    review: "", 
+    img_url: "https://lh3.googleusercontent.com/proxy/vlx4xbnQDL9vuoOfy2qwh0hdYQrbqYRRXIH4bXg6gEcRMsDOXMy8sdCwiDbO6pk-0OyCCrJOA1aFlnR_6V5RFNkcFIwyP7Lcjg", 
+    publication_date: "1937",
+    author: @rand,
+    category: @business,
+    author_name: "Ayn Rand",
+    category_name: "Business"
+)
+
+# science fiction
 @sirens_of_titan = Book.create(
     title: "The Sirens of Titan", 
     description: "A story that details how the entire summation of humanity was oriented towards an alien species (the Tralfamadorians) finding
     a small missing part for their space ship so that they may return home", 
     review: "Vonnegut constantly forces me to question the degree of agency humans possess. Christian moral theology 
     manifested as a contemporary political construct dicates the fundamental supremacy of agency and free will; 
-    whereas post-Modernist thinkers believe agency is largely bounded (if not altogether dependent on) externalities. 
-    I am much more inclined to believe we humans possess necessary degrees of freedom within
-    our actions; but Vonnegut forces me to question how naive that supposition may in fact be.", 
+    whereas post-modernist thinkers suggest agency is largely bounded by (if not altogether dependent on) externalities. 
+    I am much more inclined to believe humans possess necessary degrees of freedom within this bounded construct that defines
+    our actions; but Vonnegut forces me to question the degrees of freedom we possess to deviate from an inevitable mechanistic 
+    external process.", 
     img_url: "https://upload.wikimedia.org/wikipedia/en/5/57/TheSirensofTitan%281959%29.jpg", 
     publication_date: "1959",
     author: @vonnegut,
@@ -92,7 +254,7 @@ Book.destroy_all
     description: " ", 
     review: " ", 
     img_url: "https://images-na.ssl-images-amazon.com/images/I/518WxaFw0rL.jpg",
-    publication_date: " ",
+    publication_date: "1950",
     author: @bradbury,
     category: @science_fiction,
     author_name: "Ray Bradbury",
@@ -103,7 +265,7 @@ Book.destroy_all
     description: " ", 
     review: " ", 
     img_url: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1417900846l/29579.jpg", 
-    publication_date: " ",
+    publication_date: "1951",
     author: @asimov,
     category: @science_fiction,
     author_name: "Isaac Asimov",
@@ -115,12 +277,135 @@ Book.destroy_all
     description: " ", 
     review: " ", 
     img_url: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327937330l/6303927.jpg", 
-    publication_date: " ",
+    publication_date: "1992",
     author: @stephenson,
     category: @science_fiction,
     author_name: "Neal Stephenson",
     category_name: "Science Fiction"
 )
+
+@cryptonomicon = Book.create(
+    title: "Cryptonomicon", 
+    description: " ", 
+    review: " ", 
+    img_url: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327931476l/816.jpg", 
+    publication_date: "1999",
+    author: @stephenson,
+    category: @science_fiction,
+    author_name: "Neal Stephenson",
+    category_name: "Science Fiction"
+)
+
+@world_war_z = Book.create(
+    title: "World War Z", 
+    description: " ", 
+    review: " ", 
+    img_url: "https://images-na.ssl-images-amazon.com/images/I/51MobP6njBL._SX317_BO1,204,203,200_.jpg", 
+    publication_date: "2006",
+    author: @brooks,
+    category: @science_fiction,
+    author_name: "Max Brooks",
+    category_name: "Science Fiction"
+)
+
+@slaughterhouse_five = Book.create(
+    title: "Slaughterhouse Five", 
+    description: "", 
+    review: " ", 
+    img_url: "https://images-na.ssl-images-amazon.com/images/I/61O1tkFh+iL.jpg", 
+    publication_date: "1969",
+    author: @vonnegut,
+    category: @science_fiction,
+    author_name: "Kurt Vonnegut",
+    category_name: "Science Fiction"
+)
+
+@cats_cradle = Book.create(
+    title: "Cat's Cradle", 
+    description: "", 
+    review: " ", 
+    img_url: "https://images-na.ssl-images-amazon.com/images/I/61UhtwmcbOL.jpg", 
+    publication_date: "1963",
+    author: @vonnegut,
+    category: @science_fiction,
+    author_name: "Kurt Vonnegut",
+    category_name: "Science Fiction"
+)
+
+@mother_night = Book.create(
+    title: "Mother Night", 
+    description: " ", 
+    review: " ", 
+    img_url: "https://images-na.ssl-images-amazon.com/images/I/71AFRyS3XiL.jpg", 
+    publication_date: "1962",
+    author: @vonnegut,
+    category: @science_fiction,
+    author_name: "Kurt Vonnegut",
+    category_name: "Science Fiction"
+)
+
+@robot = Book.create(
+    title: "I, Robot", 
+    description: " ", 
+    review: " ", 
+    img_url: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1609035271l/41804.jpg", 
+    publication_date: "1950",
+    author: @asimov,
+    category: @science_fiction,
+    author_name: "Isaac Asimov",
+    category_name: "Science Fiction"
+)
+@old_mans_war = Book.create(
+    title: "Old Man's War", 
+    description: " ", 
+    review: " ", 
+    img_url: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1487044882l/51964.jpg", 
+    publication_date: "2005",
+    author: @scalzi,
+    category: @science_fiction,
+    author_name: "John Scalzi",
+    category_name: "Science Fiction"
+)
+
+
+@empire = Book.create(
+    title: "Foundation and Empire", 
+    description: " ", 
+    review: " ", 
+    img_url: "https://images-na.ssl-images-amazon.com/images/I/81AXsfAobML.jpg", 
+    publication_date: "1952",
+    author: @asimov,
+    category: @science_fiction,
+    author_name: "Isaac Asimov",
+    category_name: "Science Fiction"
+)
+
+@second_foundation = Book.create(
+    title: "", 
+    description: " ", 
+    review: " ", 
+    img_url: "https://afairbitofreading.files.wordpress.com/2014/01/secondfoundation.jpg", 
+    publication_date: "1953",
+    author: @asimov,
+    category: @science_fiction,
+    author_name: "Isaac Asimov",
+    category_name: "Science Fiction"
+)
+
+@quicksilver = Book.create(
+    title: "Quicksilver", 
+    description: " ", 
+    review: " ", 
+    img_url: "https://m.media-amazon.com/images/I/41hfFgdr8IS.jpg", 
+    publication_date: "2003",
+    author: @stephenson,
+    category: @science_fiction,
+    author_name: "Neal Stephenson",
+    category_name: "Science Fiction"
+)
+
+
+# Computer Science
 
 @life_after_google = Book.create(
     title: "Life After Google", 
