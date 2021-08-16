@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 const Books = () => {
     const [books, setBooks] = useState([]);
-    const [toggleFetch, setToggleFetch] = useState(true);
+    // const [toggleFetch, setToggleFetch] = useState(true);
 
     useEffect(() => {
         const fetchBooks = async () => {
@@ -16,9 +16,10 @@ const Books = () => {
             const allBooks = await axios.get(url)
             setBooks(allBooks.data);
             console.log(allBooks.data)
+            
         };
         fetchBooks();
-    }, [toggleFetch])
+    }, [])
 
     console.log(books)
     return (
