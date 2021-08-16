@@ -10,7 +10,8 @@ import Books from './screens/Books/Books'
 import WritingSamples from './screens/WritingSamples/WritingSamples';
 import Projects from './screens/Projects/Projects';
 import Header from './components/Header/Header';
-import BookDetail from './screens/BookDetail/BookDetail'
+import BookDetail from './screens/BookDetail/BookDetail';
+import AddBook from './screens/AddBook/AddBook';
 import Footer from './components/Footer/Footer';
 
 
@@ -33,6 +34,9 @@ function App() {
       </Route>
       <Route exact path="/books/:id">
         <BookDetail />
+      </Route>
+      <Route path="/newBook">
+        <AddBook />
       </Route>
       <Footer />
 

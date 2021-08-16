@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { createBook } from '../../services/books';
 import { Redirect } from 'react-router-dom';
-import { Form, Container } from 'react-bootstrap';
+import { Form, Container, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
-const addBook = (props) => {
+const AddBook = (props) => {
     const [book, setBook] = useState({
         title: "",
         description: "",
@@ -119,7 +120,14 @@ const addBook = (props) => {
                         <option value="Other Media Forms">Other Forms of Media</option>
                     </Form.Select>
 
-                    
+                    <Container>
+                        <Link to={'/books'}>
+                            <Button>Back to Browse</Button>
+                        </Link>
+                        <Button type="submit">
+                            Create Book
+                        </Button>
+                    </Container>
                 </Form>
             </Container>
         </div>
@@ -128,5 +136,5 @@ const addBook = (props) => {
 
 }
 
-export default addBook;
+export default AddBook;
 

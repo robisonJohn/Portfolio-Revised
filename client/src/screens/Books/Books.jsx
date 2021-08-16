@@ -4,6 +4,7 @@ import './Books.css'
 import axios from 'axios';
 import { Row, Col, Container, Card, Button, DropdownButton } from 'react-bootstrap';
 import { Dropdown } from "react-bootstrap";
+import { Link } from 'react-router-dom';
 
 const Books = () => {
     const [books, setBooks] = useState([]);
@@ -37,7 +38,7 @@ const Books = () => {
                     </Col>
                 </Row>
                 <Row>
-                    <Col><Button variant="success" style={{margin: "15px"}}>CREATE NEW BOOK</Button></Col>
+                    <Col><Link to="/newBook"><Button variant="success" style={{margin: "15px"}}>CREATE NEW BOOK</Button></Link></Col>
                     <Col>
                         <DropdownButton title="FILTER BY GENRE" style={{margin: "15px"}} variant="light">
                                 <Dropdown.Item href="#/science-fiction">Science Fiction</Dropdown.Item>
