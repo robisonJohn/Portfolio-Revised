@@ -12,11 +12,11 @@ const AddBook = (props) => {
         review: "",
         img_url: "",
         publication_date: "",
-        author: "",
-        category: "",
-        author: "",
+        author_name: "",
         category_name: "",
     });
+
+    const [isCreated, setCreated] = useState(false);
 
     
 
