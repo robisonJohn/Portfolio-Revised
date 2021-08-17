@@ -8,7 +8,7 @@ function Filter(props) {
 
     return (
 
-        <Form className="filter-container" onSubmit={props.handleSubmit}>
+        <Form className="filter-container" onSubmit={props.handleSubmit} style={{width: "200px", margin: "15px"}}>
         <Form.Select className="filter" onChange={handleFilter}>
             <option>&nbsp; FILTER BY: &nbsp;</option>
             <option className="option" value="Science Fiction">&nbsp; Science Fiction &nbsp;</option>
