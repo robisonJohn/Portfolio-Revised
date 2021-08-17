@@ -22,11 +22,14 @@ const Books = () => {
     const [filterType, setFilterType] = useState('Science Fiction')
     const [filterResult, setFilterResult] = useState([])
 
+    const [isLoaded, setLoaded] = useState(false);
+
     useEffect(() => {
         const fetchBooks = async () => {
             const url = 'https://robison-portfolio-api.herokuapp.com/goodreads'
             const allBooks = await axios.get(url)
             setBooks(allBooks.data);
+            setLoaded(true)
             console.log(allBooks.data)
             
         };
@@ -73,6 +76,9 @@ const Books = () => {
     let result = books;
     if (filterResult.length > 0) {
         result = filterResult;
+    }
+    if (!isLoaded) {
+        return <h1>Loading...</h1>
     }
 
     return (
