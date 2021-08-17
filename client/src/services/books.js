@@ -1,7 +1,11 @@
-import api from './apiConfig'
+
+import axios from 'axios';
+const baseUrl = 'https://robison-portfolio-api.herokuapp.com/';
+const api = axios.create(baseUrl)
 
 export const getBooks = async () => {
     try {
+
         const response = await api.get('/books')
         return response.data
     }
