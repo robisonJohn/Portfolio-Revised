@@ -13,7 +13,7 @@ const Home = () => {
                     <Row className="justify-content-md-center">
                             <Col></Col>
                             <Col className="justify-content-md-center">
-                                <Card style={{ height: "88px", width: "95px", marginLeft: '25px', marginTop: '90px'}}><a href="https://previews.123rf.com/images/hironicons/hironicons1912/hironicons191201172/136455877-cv-resume-icon.jpg"><Card.Img src="https://static.thenounproject.com/png/543772-200.png" height="90" width="120" alt=""/></a></Card>
+                                <Card style={{ height: "88px", width: "95px", marginLeft: '25px', marginTop: '90px'}}><a href="https://github.com/robisonJohn/Resources/blob/main/Robison%20Resume%208_13_2021%20.pdf"><Card.Img src="https://static.thenounproject.com/png/543772-200.png" height="90" width="120" alt=""/></a></Card>
                             </Col>
                             <Col className="justify-content-md-center"><a href="https://www.linkedin.com/in/john-robison-a3b649217/"><Image src="https://cdn3.iconfinder.com/data/icons/sociocons/256/linkedin-sociocon.png" height="100" width="100" alt="" style={{ marginTop: '80px'}}/></a></Col>
                             <Col className="justify-content-md-center"><a href="https://github.com/robisonJohn"><Image src="https://d1158lcjk2f3km.cloudfront.net/assets.00/asstziwq0a1i" height="100" width="100" alt="" style={{ marginTop: '75px'}}/></a></Col>
