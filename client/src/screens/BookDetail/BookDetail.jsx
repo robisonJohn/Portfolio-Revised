@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom'
-import { Button, Container, Row, Col, Card } from 'react-bootstrap';
+import { Button, Container, Row, Col, Card, Image } from 'react-bootstrap';
 import './BookDetail.css';
 import axios from 'axios';
 
@@ -41,36 +41,37 @@ const BookDetail = (props) => {
 
             <Container>
                 <Row>
-                    
-                <Col style={{margin: "20px", padding: "30px"}}>
-                    <Row><Card style={{margin: "20px"}}><Card.Img src={book.img_url} height="600" width="200" style={{padding: "10px"}}/></Card></Row>
-
-                </Col>
-                <Col style={{margin: "20px", padding: "30px"}} className="justify-content-md-center">
-                    <Row className="justify-content-md-center"></Row>
-                    <Row className="justify-content-md-center"><Card style={{backgroundColor:'#4B736E', margin: "15px", padding: "15px", width: "400px"}}>Category: {book.category_name}</Card></Row>
-                    <Row className="justify-content-md-center"><Card style={{backgroundColor:'#4B736E', margin: "15px", padding: "15px", width: "400px"}}>Author: {book.author_name}</Card></Row>
-                    <Row className="justify-content-md-center"><Card style={{backgroundColor:'#4B736E', margin: "15px", padding: "15px", width: "400px"}}>Year Published: {book.publication_date}</Card></Row>
-                    <Col className="justify-content-md-center">
-                        <Row className="justify-content-md-center">
-                            <Link to={`/goodreads`}>
-                                <Button variant="info" style={{margin: "10px", width: "150px"}} className="button">Back to Browse</Button>
-                            </Link>
-                        </Row>
-                        <Row className="justify-content-md-center">
-                            <Link to={`/goodreads/${book.id}/edit`}>
-                                <Button variant="warning" style={{margin: "10px", width: "150px"}} className="button">Update Book</Button>
-                            </Link>
-                        </Row>
-                        <Row className="justify-content-md-center">
-                            <Link to={`/confirmation`}>
-                                <Button onClick={() => deleteBook(book.id)} variant="danger" style={{margin: "10px", width: "150px"}} className="button">Delete Book</Button>
-                            </Link>
-                        </Row>
-                    </Col>
-                    <Row className="justify-content-md-center"></Row>
-                </Col>
+                <Col className="justify-content-md-center" >
+                    <Image src={book.img_url} className="image-details"/>
                 
+                </Col>
+                <Col className="justify-content-md-center">
+                    <Row className="justify-content-md-center"></Row>
+                    <Row className="justify-content-md-center"><Card style={{backgroundColor:'#4B736E', padding: "15px", width: "400px"}}>Category: {book.category_name}</Card></Row>
+                    <Row className="justify-content-md-center"><Card style={{backgroundColor:'#4B736E', padding: "15px", width: "400px"}}>Author: {book.author_name}</Card></Row>
+                    <Row className="justify-content-md-center"><Card style={{backgroundColor:'#4B736E', padding: "15px", width: "400px"}}>Year Published: {book.publication_date}</Card></Row>
+                    <Row className="justify-content-md-center"></Row>
+                    <Row className="justify-content-md-center">
+                        <Col>
+                            <Row className="justify-content-md-center">
+                                <Link to={`/goodreads`}>
+                                    <Button variant="info" style={{margin: "10px", width: "150px"}} className="button">Back to Browse</Button>
+                                </Link>
+                            </Row>
+                            <Row className="justify-content-md-center">
+                                <Link to={`/goodreads/${book.id}/edit`}>
+                                    <Button variant="warning" style={{margin: "10px", width: "150px"}} className="button">Update Book</Button>
+                                </Link>
+                            </Row>
+                            <Row className="justify-content-md-center">
+                                <Link to={`/confirmation`}>
+                                    <Button onClick={() => deleteBook(book.id)} variant="danger" style={{margin: "10px", width: "150px"}} className="button">Delete Book</Button>
+                                </Link>
+                            </Row>
+                        </Col>
+
+                </Row>
+                </Col>
                 </Row>
 
             </Container>

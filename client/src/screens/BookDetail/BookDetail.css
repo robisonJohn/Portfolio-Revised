@@ -7,3 +7,8 @@ h1 {
 #details {
     margin-bottom: 100px;
 }
+
+.image-details {
+    width: 400px;
+    height: 600px;
+}
