@@ -43,11 +43,11 @@ const BookDetail = (props) => {
             <Container>
                 <Row>
                     
-                <Col style={{margin: "20px", padding: "70px"}}>
+                <Col style={{margin: "20px", padding: "30px"}}>
                     <Row><Card style={{margin: "20px"}}><Card.Img src={book.img_url} height="600" width="200" style={{padding: "10px"}}/></Card></Row>
 
                 </Col>
-                <Col style={{margin: "20px", padding: "70px"}} className="justify-content-md-center">
+                <Col style={{margin: "20px", padding: "30px"}} className="justify-content-md-center">
                     <Row className="justify-content-md-center"></Row>
                     <Row className="justify-content-md-center"><Card style={{backgroundColor:'#4B736E', margin: "15px", padding: "15px", width: "400px"}}>Category: {book.category_name}</Card></Row>
                     <Row className="justify-content-md-center"><Card style={{backgroundColor:'#4B736E', margin: "15px", padding: "15px", width: "400px"}}>Author: {book.author_name}</Card></Row>
