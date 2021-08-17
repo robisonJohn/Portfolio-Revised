@@ -1,7 +1,9 @@
 
 import axios from 'axios';
-const baseUrl = 'https://robison-portfolio-api.herokuapp.com/';
-const api = axios.create(baseUrl)
+const baseUrl = 'https://robison-portfolio-api.herokuapp.com';
+const api = axios.create({
+    baseUrl: baseUrl
+})
 
 export const getBooks = async () => {
     try {

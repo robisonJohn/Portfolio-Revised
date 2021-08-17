@@ -12,7 +12,7 @@ const Books = () => {
 
     useEffect(() => {
         const fetchBooks = async () => {
-            const url = 'http://localhost:3000/goodreads'
+            const url = 'https://robison-portfolio-api.herokuapp.com/goodreads'
             const allBooks = await axios.get(url)
             setBooks(allBooks.data);
             console.log(allBooks.data)
