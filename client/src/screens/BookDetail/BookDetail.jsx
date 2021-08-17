@@ -40,17 +40,17 @@ const BookDetail = (props) => {
                     <Row className="justify-content-md-center"><Card style={{backgroundColor:'#4B736E', margin: "15px", padding: "15px", width: "400px"}}>Year Published: {book.publication_date}</Card></Row>
                     <Col className="justify-content-md-center">
                         <Row className="justify-content-md-center">
-                            <Link to={`/books`}>
+                            <Link to={`/goodreads`}>
                                 <Button variant="info" style={{margin: "10px", width: "150px"}} className="button">Back to Browse</Button>
                             </Link>
                         </Row>
                         <Row className="justify-content-md-center">
-                            <Link to={`/books/${book.id}/edit`}>
+                            <Link to={`/goodreads/${book.id}/edit`}>
                                 <Button variant="warning" style={{margin: "10px", width: "150px"}} className="button">Update Book</Button>
                             </Link>
                         </Row>
                         <Row className="justify-content-md-center">
-                            <Link to={`/books`}>
+                            <Link to={`/goodreads`}>
                                 <Button onClick={() => deleteBook(book.id)} variant="danger" style={{margin: "10px", width: "150px"}} className="button">Delete Book</Button>
                             </Link>
                         </Row>

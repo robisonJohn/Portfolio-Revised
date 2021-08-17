@@ -7,12 +7,8 @@ import { Form, Image, Button, Container, Row, Col } from "react-bootstrap";
 const ItemEdit = (props) => {
     const [book, setBook] = useState({
         title: "",
-        description: "",
-        review: "",
         img_url: "",
         publication_date: "",
-        author: "",
-        category: "",
         author_name: "",
         category_name: "",
     });
@@ -43,7 +39,7 @@ const ItemEdit = (props) => {
     };
 
     if (isUpdated) {
-        return <Redirect to={`/books/${id}`}/>
+        return <Redirect to={`/goodreads`}/>
     }
 
     return (
@@ -70,7 +66,7 @@ const ItemEdit = (props) => {
                                 className="add-input"
                                 placeholder={`${book.img_url}`}
                                 value={book.img_url}
-                                name="image"
+                                name="img_url"
                                 required 
                                 autoFocus 
                                 onChange={handleChange}/>
@@ -81,7 +77,7 @@ const ItemEdit = (props) => {
                                 className="add-input"
                                 placeholder={`${book.publication_date}`}
                                 value={book.publication_date}
-                                name="publication"
+                                name="publication_date"
                                 required 
                                 autoFocus 
                                 onChange={handleChange}/>
@@ -92,7 +88,7 @@ const ItemEdit = (props) => {
                                 className="add-input"
                                 placeholder={`${book.author_name}`}
                                 value={book.author_name}
-                                name="name"
+                                name="author_name"
                                 required 
                                 autoFocus 
                                 onChange={handleChange}/>
@@ -103,7 +99,7 @@ const ItemEdit = (props) => {
                                             className="add-input"
                                             placeholder={`${book.category_name}`}
                                             value={book.category_name}
-                                            name="genre"
+                                            name="category_name"
                                             required
                                             autoFocus
                                             onChange={handleChange}
@@ -119,38 +115,11 @@ const ItemEdit = (props) => {
                             </Row>
                             </Col>
                         
-                            <Col>
-                                <Row className="justify-content-md-center">
-                                    <Form.Control 
-                                        type="text"
-                                        className="add-input"
-                                        placeholder="Add or Update Description"
-                                        as="textarea"
-                                        rows={3}
-                                        value={book.description}
-                                        name="description"
-                                        autoFocus 
-                                        onChange={handleChange}/>
-                                </Row>
-                                <Row className="justify-content-md-center">
-                                    <Form.Control 
-                                        type="text"
-                                        className="add-input"
-                                        placeholder="Add or Update Review"
-                                        as="textarea"
-                                        rows={3}
-                                        value={book.review}
-                                        name="review"
-                                        autoFocus 
-                                        onChange={handleChange}/>
-                                </Row>
-                            </Col>
-                        
                     </Row>
                 </Container>
 
                     <Container>
-                        <Link to={'/books'}>
+                        <Link to={'/goodreads'}>
                             <Button variant="info" className="button">Back to Browse</Button>
                         </Link>
                         <Button type="submit" variant="warning" className="button">

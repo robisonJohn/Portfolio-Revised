@@ -1,0 +1,2 @@
+class Goodread < ApplicationRecord
+end

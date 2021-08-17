@@ -30,16 +30,16 @@ function App() {
       <Route path="/writing">
         <WritingSamples />
       </Route>
-      <Route exact path="/books">
+      <Route exact path="/goodreads">
         <Books />
       </Route>
-      <Route exact path="/books/:id">
+      <Route exact path="/goodreads/:id">
         <BookDetail />
       </Route>
       <Route path="/newBook">
         <AddBook />
       </Route>
-      <Route exact path="/books/:id/edit">
+      <Route exact path="/goodreads/:id/edit">
         <BookEdit />
       </Route>
       <Footer />

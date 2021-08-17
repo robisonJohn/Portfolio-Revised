@@ -8,8 +8,6 @@ import './AddBook.css';
 const AddBook = (props) => {
     const [book, setBook] = useState({
         title: "",
-        description: "",
-        review: "",
         img_url: "",
         publication_date: "",
         author_name: "",
@@ -114,34 +112,6 @@ const AddBook = (props) => {
                                             <option value="Social Sciences">Social Sciences</option>
                                             <option value="Other Media Forms">Other Forms of Media</option>
                                         </Form.Select>
-                                </Row>
-                            </Col>
-                            </Form.Group>
-                            <Form.Group>
-                                <Col className="justify-content-md-center">
-                                <Row className="justify-content-md-center">
-                                <Form.Control 
-                                    type="text"
-                                    className="add-input"
-                                    placeholder="Description"
-                                    as="textarea"
-                                    rows={3}
-                                    value={book.description}
-                                    name="description"
-                                    autoFocus 
-                                    onChange={handleChange}/>
-                                </Row>
-                                <Row className="justify-content-md-center">
-                                    <Form.Control 
-                                    type="text"
-                                    className="add-input"
-                                    placeholder="John's Thoughts"
-                                    as="textarea"
-                                    rows={3}
-                                    value={book.review}
-                                    name="review"
-                                    autoFocus 
-                                    onChange={handleChange}/>
                                 </Row>
                             </Col>
                             </Form.Group>

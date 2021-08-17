@@ -10,7 +10,7 @@ const Header = () => {
             <Link to="/home"><Nav.Link href="#home">Home</Nav.Link></Link>
             <Link to="/projects"><Nav.Link href="#projects">Engineering Projects</Nav.Link></Link>
             <Link to="/writing"><Nav.Link href="#samples">Writing Samples</Nav.Link></Link>
-            <Link to="/books"><Nav.Link href="books">Favorite Books</Nav.Link></Link>
+            <Link to="/goodreads"><Nav.Link href="#goodreads">Favorite Books</Nav.Link></Link>
         </Nav>
         </Container>
     </Navbar>

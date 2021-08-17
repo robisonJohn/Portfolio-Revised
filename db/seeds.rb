@@ -66,7 +66,7 @@ Book.destroy_all
 
 @feynman = Author.create(name: 'Richard Feynman', country_of_origin: 'United States', category_id: @math_and_physics.id)
 
-
+=begin
 # business
 @zero_to_one = Book.create(
     title: "Zero to One: Notes on Startups, Or How to Build the Future", 
@@ -452,5 +452,257 @@ Book.destroy_all
     author_name: "Richard Feynman",
     category_name: "Mathematics and Physics"
 )
+=end
 
-puts "#{Book.count} books created!"
+# business
+@zero_to_one = Goodread.create(
+    title: "Zero to One: Notes on Startups, Or How to Build the Future", 
+    img_url: "https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Zero_to_One.jpg/220px-Zero_to_One.jpg", 
+    publication_date: "2014",
+    author_name: "Peter Thiel",
+    category_name: "Business"
+)
+
+@hard_things = Goodread.create(
+    title: "The Hard Thing about Hard Things: Building a Business where there are no Easy Answers", 
+    img_url: "https://images-na.ssl-images-amazon.com/images/I/810u9MkT3SL.jpg", 
+    publication_date: "2014",
+    author_name: "Ben Horowitz",
+    category_name: "Business"
+)
+
+@chasm = Goodread.create(
+    title: "Crossing the Chasm", 
+    img_url: "https://images-na.ssl-images-amazon.com/images/I/41AJKOyiGML._AC_UL600_SR399,600_.jpg", 
+    publication_date: "1991",
+    author_name: "Geoffrey Moore",
+    category_name: "Business"
+)
+
+
+@atlas_shrugged = Goodread.create(
+    title: "Atlas Shrugged", 
+    img_url: "https://www.idahoednews.org/wp-content/uploads/2013/02/atlas-shrugged-book-cover.jpg", 
+    publication_date: "1957",
+    author_name: "Ayn Rand",
+    category_name: "Business"
+)
+
+@fast_and_slow = Goodread.create(
+    title: "Thinking, Fast and Slow", 
+    img_url: "https://m.media-amazon.com/images/I/41shZGS-G+L.jpg", 
+    publication_date: "2011",
+    author_name: "Daniel Kahneman",
+    category_name: "Business"
+)
+
+@security_analysis = Goodread.create(
+    title: "Security Analysis", 
+    img_url: "https://images-na.ssl-images-amazon.com/images/I/51hwLfcPJPL._SX324_BO1,204,203,200_.jpg", 
+    publication_date: "1934",
+    author_name: "Benjamin Graham and David Dodd",
+    category_name: "Business"
+)
+
+@investor = Goodread.create(
+    title: "The Intelligent Investor", 
+    img_url: "https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/the-intelligent-investor-benjamin-graham-investment-classics-edward-g.jpg", 
+    publication_date: "1949",
+    author_name: "Benjamin Graham",
+    category_name: "Business"
+)
+
+@innovators = Goodread.create(
+    title: "The Innovators", 
+    img_url: "https://d28hgpri8am2if.cloudfront.net/tagged_assets/cvr9781442376229/9781442376229_hr.jpg", 
+    publication_date: "2014",
+    author_name: "Benjamin Graham",
+    category_name: "Business"
+)
+
+@principles = Goodread.create(
+    title: "Principles", 
+    img_url: "https://images-na.ssl-images-amazon.com/images/I/71FDkx5WllL.jpg", 
+    publication_date: "2017",
+    author_name: "Ray Dalio",
+    category_name: "Business"
+)
+
+@originals = Goodread.create(
+    title: "Originals", 
+    img_url: "https://m.media-amazon.com/images/I/511qyzBH42L._AC_SY780_.jpg", 
+    publication_date: "2016",
+    author_name: "Adam Grant",
+    category_name: "Business"
+)
+
+@fountainhead = Goodread.create(
+    title: "The Fountainhead", 
+    img_url: "https://m.media-amazon.com/images/I/51Cy++hpNIL.jpg",
+    publication_date: "1943",
+    author_name: "Ayn Rand",
+    category_name: "Business"
+)
+
+@anthem = Goodread.create(
+    title: "Anthem", 
+    img_url: "https://lh3.googleusercontent.com/proxy/vlx4xbnQDL9vuoOfy2qwh0hdYQrbqYRRXIH4bXg6gEcRMsDOXMy8sdCwiDbO6pk-0OyCCrJOA1aFlnR_6V5RFNkcFIwyP7Lcjg", 
+    publication_date: "1937",
+    author_name: "Ayn Rand",
+    category_name: "Business"
+)
+
+# science fiction
+@sirens_of_titan = Goodread.create(
+    title: "The Sirens of Titan",  
+    img_url: "https://upload.wikimedia.org/wikipedia/en/5/57/TheSirensofTitan%281959%29.jpg", 
+    publication_date: "1959",
+    author_name: "Kurt Vonnegut",
+    category_name: "Science Fiction"
+)
+@dune = Goodread.create(
+    title: "Dune",  
+    img_url: "https://images.penguinrandomhouse.com/cover/9780593099322", 
+    publication_date: "1965",
+    author_name: "Frank Herbert",
+    category_name: "Science Fiction"
+)
+
+@martian_chronicles = Goodread.create(
+    title: "The Martian Chronicles", 
+    img_url: "https://images-na.ssl-images-amazon.com/images/I/518WxaFw0rL.jpg",
+    publication_date: "1950",
+    author_name: "Ray Bradbury",
+    category_name: "Science Fiction"
+)
+@foundation = Goodread.create(
+    title: "Foundation", 
+    img_url: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1417900846l/29579.jpg", 
+    publication_date: "1951",
+    author_name: "Isaac Asimov",
+    category_name: "Science Fiction"
+
+)
+@snow_crash = Goodread.create(
+    title: "Snow Crash", 
+    img_url: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327937330l/6303927.jpg", 
+    publication_date: "1992",
+    author_name: "Neal Stephenson",
+    category_name: "Science Fiction"
+)
+
+@cryptonomicon = Goodread.create(
+    title: "Cryptonomicon", 
+    img_url: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327931476l/816.jpg", 
+    publication_date: "1999",
+    author_name: "Neal Stephenson",
+    category_name: "Science Fiction"
+)
+
+@world_war_z = Goodread.create(
+    title: "World War Z", 
+    img_url: "https://images-na.ssl-images-amazon.com/images/I/51MobP6njBL._SX317_BO1,204,203,200_.jpg", 
+    publication_date: "2006",
+    author_name: "Max Brooks",
+    category_name: "Science Fiction"
+)
+
+@slaughterhouse_five = Goodread.create(
+    title: "Slaughterhouse Five", 
+    img_url: "https://images-na.ssl-images-amazon.com/images/I/61O1tkFh+iL.jpg", 
+    publication_date: "1969",
+    author_name: "Kurt Vonnegut",
+    category_name: "Science Fiction"
+)
+
+@cats_cradle = Goodread.create(
+    title: "Cat's Cradle", 
+    img_url: "https://images-na.ssl-images-amazon.com/images/I/61UhtwmcbOL.jpg", 
+    publication_date: "1963",
+    author_name: "Kurt Vonnegut",
+    category_name: "Science Fiction"
+)
+
+@mother_night = Goodread.create(
+    title: "Mother Night", 
+    img_url: "https://images-na.ssl-images-amazon.com/images/I/71AFRyS3XiL.jpg", 
+    publication_date: "1962",
+    author_name: "Kurt Vonnegut",
+    category_name: "Science Fiction"
+)
+
+@robot = Goodread.create(
+    title: "I, Robot", 
+    img_url: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1609035271l/41804.jpg", 
+    publication_date: "1950",
+    author_name: "Isaac Asimov",
+    category_name: "Science Fiction"
+)
+@old_mans_war = Goodread.create(
+    title: "Old Man's War", 
+    img_url: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1487044882l/51964.jpg", 
+    publication_date: "2005",
+    author_name: "John Scalzi",
+    category_name: "Science Fiction"
+)
+
+
+@empire = Goodread.create(
+    title: "Foundation and Empire", 
+    img_url: "https://images-na.ssl-images-amazon.com/images/I/81AXsfAobML.jpg", 
+    publication_date: "1952",
+    author_name: "Isaac Asimov",
+    category_name: "Science Fiction"
+)
+
+@second_foundation = Goodread.create(
+    title: "", 
+    img_url: "https://afairbitofreading.files.wordpress.com/2014/01/secondfoundation.jpg", 
+    publication_date: "1953",
+    author_name: "Isaac Asimov",
+    category_name: "Science Fiction"
+)
+
+@quicksilver = Goodread.create(
+    title: "Quicksilver", 
+    img_url: "https://m.media-amazon.com/images/I/41hfFgdr8IS.jpg", 
+    publication_date: "2003",
+    author_name: "Neal Stephenson",
+    category_name: "Science Fiction"
+)
+
+
+# Computer Science
+
+@life_after_google = Goodread.create(
+    title: "Life After Google", 
+    img_url: "https://images-na.ssl-images-amazon.com/images/I/611dc2sHZoL.jpg", 
+    publication_date: "",
+    author_name: "George Gilder",
+    category_name: "Computer Science"
+)
+@sapiens = Goodread.create(
+    title: "Sapiens", 
+    img_url: "https://images-na.ssl-images-amazon.com/images/I/41+lolL22gL._SX314_BO1,204,203,200_.jpg", 
+    publication_date: " ",
+    author_name: "Yuval Noah Harari",
+    category_name: "Social Sciences"
+)
+@dark = Goodread.create(
+    title: "Dark", 
+    img_url: "https://images-na.ssl-images-amazon.com/images/I/81oWDX24u%2BL._SL1200_.jpg", 
+    publication_date: " ",
+    author_name: "Baran bo Odar and Jantje Friese",
+    category_name: "Other Media Forms"
+)
+
+@surely_joking = Goodread.create(
+    title: "Surely you're joking, Mr. Feynman", 
+    img_url: "https://pbs.twimg.com/media/EQvypQXUUAATrhT.jpg", 
+    publication_date: " ",
+    author_name: "Richard Feynman",
+    category_name: "Mathematics and Physics"
+)
+
+
+puts "#{Goodread.count} goodreads created!"

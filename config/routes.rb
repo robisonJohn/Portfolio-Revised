@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :goodreads
   resources :books
   resources :authors
   resources :categories
