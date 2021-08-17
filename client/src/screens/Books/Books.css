@@ -1,7 +1,11 @@
 #books-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
+    display: flex;
+    flex-wrap: wrap !important;
+    justify-content: space-evenly;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    margin-top: 4rem;
+    }
 
 h5 {
     max-width: 400px;
