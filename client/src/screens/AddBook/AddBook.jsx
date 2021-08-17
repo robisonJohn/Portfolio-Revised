@@ -40,7 +40,7 @@ const AddBook = (props) => {
     }
 
     return (
-        <div>
+        <div id="add-book">
             <h1>Create a new book!</h1>
 
             <Container>
