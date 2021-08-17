@@ -2,8 +2,7 @@ import { useEffect, useState } from "react";
 import  Book  from '../../components/Book/Book'
 import './Books.css'
 import axios from 'axios';
-import { Row, Col, Container, Card, Button, DropdownButton } from 'react-bootstrap';
-import { Dropdown } from "react-bootstrap";
+import { Row, Col, Container, Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import {
     filterScienceFiction,
@@ -12,11 +11,16 @@ import {
     filterBusiness,
     filterSocialSciences,
     filterAlternativeMedia,
-} from '../../utils/filter.js'
+} from '../../utils/filter.js';
+import Filter from '../../components/Filter/Filter'
 
 const Books = () => {
     const [books, setBooks] = useState([]);
     // const [toggleFetch, setToggleFetch] = useState(true);
+
+    const [applyFilter, setApplyFilter] = useState(false);
+    const [filterType, setFilterType] = useState('Science Fiction')
+    const [filterResult, setFilterResult] = useState([])
 
     useEffect(() => {
         const fetchBooks = async () => {
@@ -29,7 +33,48 @@ const Books = () => {
         fetchBooks();
     }, [])
 
-    console.log(books)
+    const handleFilter = (type) => {
+        if (type!== "" && type !== undefined) {
+            setFilterType(type)
+        }
+
+        switch (type) {
+            case "Science Fiction":
+                setFilterResult(filterScienceFiction(books))
+                break;
+            case "Computer Science":
+                setFilterResult(filterComputerScience(books))
+                break;
+            case "Mathematics and Physics":
+                setFilterResult(filterMathematicsAndPhysics(books))
+                break;
+            case "Business":
+                setFilterResult(filterBusiness(books))
+                break;
+            case "Social Sciences":
+                setFilterResult(filterSocialSciences(books))
+                break;
+            case "Other Media Forms":
+                setFilterResult(filterAlternativeMedia(books))
+                break;
+            default:
+                setFilterResult(books);
+                break;
+        }
+    }
+
+    if (applyFilter) {
+        handleFilter(filterType);
+        setApplyFilter(false);
+    }
+
+    const handleSubmit = (event) => event.preventDefault();
+
+    let result = books;
+    if (filterResult.length > 0) {
+        result = filterResult;
+    }
+
     return (
         <div id="books-container">
             <Container>
@@ -49,20 +94,13 @@ const Books = () => {
                 <Row>
                     <Col><Link to="/newBook"><Button variant="success" style={{margin: "15px"}}>CREATE NEW BOOK</Button></Link></Col>
                     <Col>
-                        <DropdownButton title="FILTER BY GENRE" style={{margin: "15px"}} variant="light">
-                                <Dropdown.Item href="#/science-fiction">Science Fiction</Dropdown.Item>
-                                <Dropdown.Item href="#/social-sciences">Social Sciences</Dropdown.Item>
-                                <Dropdown.Item href="#/mathematics-and-physics">Mathematics and Physics</Dropdown.Item>
-                                <Dropdown.Item href="#/business">Business</Dropdown.Item>
-                                <Dropdown.Item href="#/computer-science">Computer Science</Dropdown.Item>
-                                <Dropdown.Item href="#/alt-media">Other Media Forms</Dropdown.Item>
-                        </DropdownButton>
+                        <Filter handleFilter={handleFilter} onSubmit={handleSubmit}/>
                     </Col>
                 </Row>
             </Container>
 
             <div id="books-grid">
-                {books.map((book, index) => {
+                {result.map((book, index) => {
                     return (
                         <Book 
                         id={book.id}
