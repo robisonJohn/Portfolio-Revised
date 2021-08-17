@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom'
-import { deleteBook } from '../../services/books'
 import { Button, Container, Row, Col, Card } from 'react-bootstrap';
 import './BookDetail.css';
 import axios from 'axios';

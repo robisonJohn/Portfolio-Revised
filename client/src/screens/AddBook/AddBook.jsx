@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import { createBook } from '../../services/books';
 import { Redirect } from 'react-router-dom';
 import { Form, Container, Button, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './AddBook.css';
+import axios from 'axios';
 
 const AddBook = (props) => {
     const [book, setBook] = useState({
@@ -25,6 +25,16 @@ const AddBook = (props) => {
             [name]: value,
         });
     };
+    
+    const createBook = async book => {
+        try {
+            const baseUrl = 'https://robison-portfolio-api.herokuapp.com/goodreads';
+            const response = await axios.post(baseUrl, book)
+            return response.data
+        } catch (error) {
+            throw error
+        }
+    }
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -36,7 +46,7 @@ const AddBook = (props) => {
     console.log(book)
 
     if (isCreated) {
-        return <Redirect to={"/books"} />;
+        return <Redirect to={"/goodreads"} />;
     }
 
     return (
