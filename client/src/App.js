@@ -14,6 +14,7 @@ import BookDetail from './screens/BookDetail/BookDetail';
 import AddBook from './screens/AddBook/AddBook';
 import Footer from './components/Footer/Footer';
 import BookEdit from './screens/BookEdit/BookEdit';
+import DeleteConfirmation from './screens/DeleteConfirmation/DeleteConfirmation';
 
 
 function App() {
@@ -41,6 +42,9 @@ function App() {
       </Route>
       <Route exact path="/goodreads/:id/edit">
         <BookEdit />
+      </Route>
+      <Route path="/confirmation">
+        <DeleteConfirmation />
       </Route>
       <Footer />
 

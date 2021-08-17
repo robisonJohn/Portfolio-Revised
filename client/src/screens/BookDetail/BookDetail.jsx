@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom'
-import { getBook, deleteBook } from '../../services/books'
+import { deleteBook } from '../../services/books'
 import { Button, Container, Row, Col, Card } from 'react-bootstrap';
 import './BookDetail.css';
+import axios from 'axios';
 
 const BookDetail = (props) => {
     const [book, setBook] = useState(null);
@@ -11,12 +12,25 @@ const BookDetail = (props) => {
 
     useEffect(() => {
         const fetchBook = async () => {
-            const book = await getBook(id)
-            setBook(book)
+            let url = `https://robison-portfolio-api.herokuapp.com/goodreads/${id}`
+            const book = await axios.get(url)
+            setBook(book.data);
+            console.log(book.data)
             setLoaded(true)
+            
         };
         fetchBook();
-    }, [id]);
+    }, [id])
+
+    const deleteBook = async id => {
+        try {
+            let url = `https://robison-portfolio-api.herokuapp.com/goodreads/${id}`
+            const response = await axios.delete(url)
+            console.log(response.data)
+        } catch (error) {
+            throw error
+        }
+    };
 
     if (!isLoaded) {
         return <h1>Loading...</h1>
@@ -50,7 +64,7 @@ const BookDetail = (props) => {
                             </Link>
                         </Row>
                         <Row className="justify-content-md-center">
-                            <Link to={`/goodreads`}>
+                            <Link to={`/confirmation`}>
                                 <Button onClick={() => deleteBook(book.id)} variant="danger" style={{margin: "10px", width: "150px"}} className="button">Delete Book</Button>
                             </Link>
                         </Row>

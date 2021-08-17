@@ -8,7 +8,7 @@ const api = axios.create({
 export const getBooks = async () => {
     try {
 
-        const response = await api.get('/books')
+        const response = await api.get('/goodreads')
         return response.data
     }
     catch (error) {
