@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams, Redirect, Link } from "react-router-dom";
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import axios from 'axios';
+import './BookEdit.css';
 
 const ItemEdit = (props) => {
     const [book, setBook] = useState({
@@ -65,7 +66,7 @@ const ItemEdit = (props) => {
     }
 
     return (
-        <div>
+        <div id="edit-container">
             <h1>{book.title}</h1>
             <Form onSubmit={handleSubmit}>
                 <Container>
@@ -140,7 +141,7 @@ const ItemEdit = (props) => {
                     </Row>
                 </Container>
 
-                    <Container>
+                    <Container id="button-container">
                         <Link to={'/goodreads'}>
                             <Button variant="info" className="button">Back to Browse</Button>
                         </Link>
