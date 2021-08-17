@@ -14,11 +14,11 @@ const AddBook = (props) => {
         publication_date: "",
         author: "",
         category: "",
-        author_name: "",
+        author: "",
         category_name: "",
     });
 
-    const [isCreated, setCreated] = useState(false); 
+    
 
     const handleChange = (event) => {
         const { name, value } = event.target;
@@ -32,7 +32,10 @@ const AddBook = (props) => {
         event.preventDefault();
         const created = await createBook(book);
         setCreated({ created });
+        console.log(created)
+        
     };
+    console.log(book)
 
     if (isCreated) {
         return <Redirect to={"/books"} />;
@@ -65,7 +68,7 @@ const AddBook = (props) => {
                                     className="add-input"
                                     placeholder="Image Link"
                                     value={book.img_url}
-                                    name="image"
+                                    name="img_url"
                                     required 
                                     autoFocus 
                                     onChange={handleChange}/>
@@ -75,8 +78,8 @@ const AddBook = (props) => {
                                         type="text"
                                         className="add-input"
                                         placeholder="Year Published"
-                                        value={book.publication_date}
-                                        name="publication"
+                                        value = {book.publication_date}
+                                        name="publication_date"
                                         required 
                                         autoFocus 
                                         onChange={handleChange}/>
@@ -87,7 +90,7 @@ const AddBook = (props) => {
                                         className="add-input"
                                         placeholder="Author Name"
                                         value={book.author_name}
-                                        name="name"
+                                        name="author_name"
                                         required 
                                         autoFocus 
                                         onChange={handleChange}/>
@@ -96,9 +99,9 @@ const AddBook = (props) => {
                                     <Form.Select 
                                         aria-label="Default select example"
                                         className="add-input"
-                                        placeholder="Genre"
+                                        placeholder="Category"
                                         value={book.category_name}
-                                        name="genre"
+                                        name="category_name"
                                         required
                                         autoFocus
                                         onChange={handleChange}
