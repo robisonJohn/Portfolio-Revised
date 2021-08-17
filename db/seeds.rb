@@ -788,49 +788,49 @@ Book.destroy_all
     img_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb4_okkcSfLo4akGYYo-7DTVAxHmESq3_bXa9jGqjFxfevBdoP", 
     publication_date: "2015",
     author_name: "Yuval Noah Harari",
-    category_name: "Social Science"
+    category_name: "Social Sciences"
 )
 @twenty_one_lessons = Goodread.create(
     title: "21 Lessons for the 21st Century", 
     img_url: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTuKYBCdYT37lJlvRNKPW4bCralc7OCsa6sMEta3f_asqdWOGNk", 
     publication_date: "2018",
     author_name: "Yuval Noah Harari",
-    category_name: "Social Science"
+    category_name: "Social Sciences"
 )
 @freakonomics = Goodread.create(
     title: "Freakonomics", 
     img_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQubKvdknFyNXw8UXKMLhfyMfKBngC8B_S8dVj8AC48NPOu9sNF", 
     publication_date: "2005",
     author_name: "Steven D. Levitt and Stephen J. Dubner",
-    category_name: "Social Science"
+    category_name: "Social Sciences"
 )
 @misbehaving = Goodread.create(
     title: "Misbehaving", 
     img_url: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUCreLrEPyAL_hz7fHhB8snbkT6h4A4RaT8564Iq3vXniF_Wjk", 
     publication_date: "2015",
     author_name: "Richard Thaler",
-    category_name: "Social Science"
+    category_name: "Social Sciences"
 )
 @systems = Goodread.create(
     title: "Thinking in Systems", 
     img_url: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVDry5Gz0-xeovYUrTnPRLKbQ3YMuJ8A1vRT6m41HToqbX9nu2", 
     publication_date: "2008",
     author_name: "Donella Meadows",
-    category_name: "Social Science"
+    category_name: "Social Sciences"
 )
 @think_like_a_freak = Goodread.create(
     title: "Think Like a Freak", 
     img_url: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjkasjqPNzgvAygscM5PuDMhi-Q0Te_xdjoO74756TxTKseF8m", 
     publication_date: "2014",
     author_name: "Steven D. Levitt and Stephen J. Dubner",
-    category_name: "Social Science"
+    category_name: "Social Sciences"
 )
 @how_to_rob_a_bank = Goodread.create(
     title: "How to Rob a Bank", 
     img_url: "https://images-na.ssl-images-amazon.com/images/I/51fdrbMNZsL._SX330_BO1,204,203,200_.jpg", 
     publication_date: "2015",
     author_name: "Steven D. Levitt and Stephen J. Dubner",
-    category_name: "Social Science"
+    category_name: "Social Sciences"
 )
 @star_wars = Goodread.create(
     title: "Star Wars", 
