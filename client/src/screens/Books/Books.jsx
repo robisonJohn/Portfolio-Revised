@@ -5,6 +5,14 @@ import axios from 'axios';
 import { Row, Col, Container, Card, Button, DropdownButton } from 'react-bootstrap';
 import { Dropdown } from "react-bootstrap";
 import { Link } from 'react-router-dom';
+import {
+    filterScienceFiction,
+    filterComputerScience,
+    filterMathematicsAndPhysics,
+    filterBusiness,
+    filterSocialSciences,
+    filterAlternativeMedia,
+} from '../../utils/filter.js'
 
 const Books = () => {
     const [books, setBooks] = useState([]);
