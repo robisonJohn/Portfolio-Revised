@@ -39,7 +39,7 @@ const Projects = () => {
                     <Card style={{backgroundColor:'#4B736E', margin: "15px", padding: "15px", width: "700px"}}>
                         <h3>Community Table</h3>
                         
-                        <><h4><a href="https://healu.netlify.app/home"><Image src={communityTable} height="450" width="600" style={{margin: "20px"}}/></a></h4></>
+                        <><h4><a href="https://community-table.netlify.app"><Image src={communityTable} height="450" width="600" style={{margin: "20px"}}/></a></h4></>
                         <p>Community Table seeks to rethink how organizations manage food waste by optimizing donations according to 
                             principles in Probability Theory and Tax Law. Namely, the expected value of the food is calculated so that 
                             food will be donated as soon as the food's expected value is less or equal to than its price price multiplied by the tax 
@@ -67,7 +67,7 @@ const Projects = () => {
                 <Row className="justify-content-md-center">
                     <Card style={{backgroundColor:'#4B736E', margin: "15px", padding: "15px", width: "700px", marginBottom: "50px"}}>
                         <h3>Heal U</h3>
-                        <h4><a href="https://healu.netlify.app/home"><Image src={healU} height="450" width="600" style={{margin: "20px"}}/></a></h4>
+                        <h4><a href="https://healu.netlify.app"><Image src={healU} height="450" width="600" style={{margin: "20px"}}/></a></h4>
 
                         <p>
                             Heal U enables the user to enter emotional data (according to key principles described by Abraham Maslow and other major thinkers 
