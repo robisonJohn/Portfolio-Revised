@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
-import { getBook, updateBook } from "../../services/books";
 import { useParams, Redirect, Link } from "react-router-dom";
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
-
+import axios from 'axios';
 
 const ItemEdit = (props) => {
     const [book, setBook] = useState({
@@ -15,6 +14,28 @@ const ItemEdit = (props) => {
 
     const [isUpdated, setUpdated] = useState(false);
     let { id } = useParams();
+
+    const getBook = async id => {
+        try {
+            let baseUrl = `https://robison-portfolio-api.herokuapp.com/goodreads/${id}`
+            const response = await axios.get(baseUrl)
+            return response.data
+        }
+        catch (error) {
+            throw error
+        }
+    }
+
+
+    const updateBook = async (id, book) => {
+        try {
+            let baseUrl = `https://robison-portfolio-api.herokuapp.com/goodreads/${id}`
+            const response = await axios.put(baseUrl, book)
+            return response.data
+        } catch (error) {
+            throw error
+        }
+    }
 
     useEffect(() => {
         const fetchBook = async () => {
@@ -36,10 +57,11 @@ const ItemEdit = (props) => {
         event.preventDefault();
         const updated = await updateBook(id, book);
         setUpdated(updated);
+        console.log(updated)
     };
 
     if (isUpdated) {
-        return <Redirect to={`/goodreads`}/>
+        return <Redirect to={`/goodreads/${id}`}/>
     }
 
     return (
@@ -122,9 +144,13 @@ const ItemEdit = (props) => {
                         <Link to={'/goodreads'}>
                             <Button variant="info" className="button">Back to Browse</Button>
                         </Link>
-                        <Button type="submit" variant="warning" className="button">
-                            Update Book
-                        </Button>
+                        
+                            <Button type="submit" variant="warning" className="button">
+                                    Update Book
+                                
+                            </Button>
+                        
+
                     </Container>
             </Form>
         </div>
