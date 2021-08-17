@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { getBook, updateBook } from "../../services/books";
 import { useParams, Redirect, Link } from "react-router-dom";
-import { Form, Image, Button, Container, Row, Col } from "react-bootstrap";
+import { Form, Button, Container, Row, Col } from "react-bootstrap";
 
 
 const ItemEdit = (props) => {

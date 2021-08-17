@@ -122,7 +122,7 @@ const AddBook = (props) => {
                     </Container>
 
                     <Container>
-                        <Link to={'/books'}>
+                        <Link to={'/goodreads'}>
                             <Button variant="info" className="button">Back to Browse</Button>
                         </Link>
                         <Button type="submit" variant="success" className="button">

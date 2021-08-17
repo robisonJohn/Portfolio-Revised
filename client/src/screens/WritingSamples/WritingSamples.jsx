@@ -6,7 +6,7 @@ import dragons from './images/rational-dragons.png';
 const WritingSamples = () => {
     return (
         <Container>
-            <h1>Below is a list of my selected writing samples: </h1>
+            <h1>Selected Writing Samples</h1>
             <Col className="justify-content-md-center">
                 <Row className="justify-content-md-center">
                     <Card style={{backgroundColor:'#4B736E', margin: "15px", padding: "15px", width: "700px"}}>

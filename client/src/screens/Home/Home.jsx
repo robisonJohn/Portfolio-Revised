@@ -4,9 +4,9 @@ import headshot from './images/headshot.jpg'
 //  
 const Home = () => {
     return (
-        <Container className="justify-content-md-center">
+        <Container>
             <Container className="justify-content-md-center">
-                <Col>
+                <Col className="justify-content-md-center">
                     <Row className="justify-content-md-center">
                         <Card style={{width:"190px", height:"265px", marginTop: '20px', padding: "5px"}}><Card.Img src={headshot} width="175" height="250" alt=""/></Card>
                     </Row>
