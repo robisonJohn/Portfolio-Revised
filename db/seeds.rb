@@ -731,7 +731,7 @@ Goodread.destroy_all
 )
 @mathematical_thinking = Goodread.create(
     title: "Introduction to Mathematical Thinking", 
-    img_url: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7jHo_oJa5mJHL1iGLduz9nH5rxgyGXic5OC0SgbgNplWOQRnU", 
+    img_url: "https://images-na.ssl-images-amazon.com/images/I/41LEgIHzvjL._SX331_BO1,204,203,200_.jpg", 
     publication_date: "2014",
     author_name: "Jordan Ellenberg",
     category_name: "Mathematics and Physics"
