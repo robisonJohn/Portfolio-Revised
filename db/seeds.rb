@@ -724,9 +724,9 @@ Goodread.destroy_all
 )
 @how_to_not_be_wrong = Goodread.create(
     title: "How to Not Be Wrong", 
-    img_url: "", 
-    publication_date: "",
-    author_name: "",
+    img_url: "https://images-na.ssl-images-amazon.com/images/I/71tUzRQNtfL.jpg", 
+    publication_date: "2014",
+    author_name: "Jordan Ellenberg",
     category_name: "Mathematics and Physics"
 )
 @mathematical_thinking = Goodread.create(
