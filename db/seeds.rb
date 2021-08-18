@@ -11,6 +11,10 @@ Author.destroy_all
 Book.destroy_all
 =end
 
+Category.destroy_all 
+Author.destroy_all 
+Goodread.destroy_all
+
 @science_fiction = Category.create(name: 'Science Fiction')
 @computer_science = Category.create(name: 'Computer Science')
 @math_and_physics = Category.create(name: 'Mathematics and Physics')
